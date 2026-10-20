@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "GROFT Folk Traditions Explorer"
+description = "An interactive world map for exploring folk music traditions, their instruments, forms, sources and rhythms, with search, regional filters, saved entries and CSV or JSON data import."
+version = "1.0.0"
+id = "artifacts/groft"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25825
+
+[services.development]
+run = "pnpm --filter @workspace/groft run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/groft", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/groft/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25825"
+BASE_PATH = "/"
