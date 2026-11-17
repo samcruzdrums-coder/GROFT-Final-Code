@@ -9,8 +9,8 @@ Keep GROFT lettering as font-independent vector outlines rather than repeatedly 
 
 **How to apply:** Preserve the approved wording and green-to-blue palette, use natural glyph proportions, and inspect actual rendered sizes rather than relying on export dimensions.
 
-The Index label should align with the globe centerline; the neighboring labels should have equal edge-to-edge gaps.
+The Index label should align with the globe centerline. The user requested even spacing between all three tabs after the edge-gap layout was shown.
 
-**Why:** Centering the combined row moved Index off the globe's center, while equal-width buttons produced visibly unequal gaps.
+**Why:** Centering the combined row moved Index off the globe's center, and the user still found the edge-gap layout uneven.
 
-**How to apply:** Check the center label against the globe, not just the outer navigation container.
+**How to apply:** Keep tab centers equally spaced and check Index against the globe, not just the outer navigation container.

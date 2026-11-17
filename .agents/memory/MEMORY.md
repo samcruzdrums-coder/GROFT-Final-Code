@@ -1,2 +1,2 @@
 - [Account favorites](account-favorites.md) — preserve legacy guest saves on sign-in; the welcome prompt must not offer a guest or dismiss option.
-- [Brand clarity](brand-clarity.md) — use outlined lettering; align Index to the globe with equal gaps between neighboring labels.
+- [Brand clarity](brand-clarity.md) — use outlined lettering; align Index to the globe with evenly spaced tab centers.
