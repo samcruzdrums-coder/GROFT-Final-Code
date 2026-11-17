@@ -28,3 +28,73 @@ mtime_ms = 1794942691350
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/cabcee0e-38b5-4f93-99b1-70b115090c11/4039d0a6-a4bc-464a-9598-61f5cb655040"
 storage_version_token = "1794943220163294"
 content_type = "image/png"
+
+[[outputs]]
+id = "oIndUSFAhuEJBGMuz-x7s"
+uri = "file://generated-artifacts/groft/16x/groft-logo-16x.png"
+type = "image"
+title = "GROFT logo — 16× transparent PNG"
+description = "16× transparent PNG master of the original GROFT logo artwork."
+logical_id = "09c52bbb-6cc6-42e5-99e1-02a24563597c"
+content_hash = "sha256:e36da3915a357c82c22d88bfbe672cbac8dd1f2d525ef5151eccf3f71cb98637"
+size = 17372500
+mtime_ms = 1794943446862
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/09c52bbb-6cc6-42e5-99e1-02a24563597c/8ede6710-37e1-4803-bbae-9abe067756ff"
+storage_version_token = "1794943815825172"
+content_type = "image/png"
+
+[[outputs]]
+id = "dWJsGlCw7A6gA4KrX1Cmu"
+uri = "file://generated-artifacts/groft/16x/groft-tagline-16x.png"
+type = "image"
+title = "GROFT tagline — 16× transparent PNG"
+description = "16× transparent PNG master, trimmed to the visible tagline lettering."
+logical_id = "228413e9-3191-41cf-917a-2da062f21fff"
+content_hash = "sha256:8d8e95255b42850f545a0b742d5f497591744f6852865daf182a152dbb3ee22a"
+size = 1933075
+mtime_ms = 1794943452614
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/228413e9-3191-41cf-917a-2da062f21fff/213ed31d-92e2-4f5b-aac4-47947f8780e2"
+storage_version_token = "1794943816331478"
+content_type = "image/png"
+
+[[outputs]]
+id = "sAWlzymn2YVlA-PAGE1zq"
+uri = "file://generated-artifacts/groft/16x/view-globe-16x.png"
+type = "image"
+title = "GROFT Globe label — 16× PNG"
+description = "16× transparent PNG master for the Globe tab."
+logical_id = "9c94d5bd-10b0-4583-aed1-488a19c497eb"
+content_hash = "sha256:562b3c7c146e8599f709a30d1fd498bc48d30ee272e887a98315e347c4ee48f9"
+size = 342628
+mtime_ms = 1794943454090
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/9c94d5bd-10b0-4583-aed1-488a19c497eb/1ec79726-2fe9-4291-8e85-27f62279b434"
+storage_version_token = "1794943816823816"
+content_type = "image/png"
+
+[[outputs]]
+id = "PSZ8B7cyx3cKfREv1anrY"
+uri = "file://generated-artifacts/groft/16x/view-index-16x.png"
+type = "image"
+title = "GROFT Index label — 16× PNG"
+description = "16× transparent PNG master for the Index tab."
+logical_id = "4e68b9f9-62f0-4193-ac7b-f9561815a997"
+content_hash = "sha256:2b43a4ee5b62a10b137cf5fe4c106318eb76df25b0513a73056f5ed23df280f3"
+size = 286498
+mtime_ms = 1794943458882
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/4e68b9f9-62f0-4193-ac7b-f9561815a997/38ad1e2c-d3d2-4327-a8a4-21ca78cc9061"
+storage_version_token = "1794943817339152"
+content_type = "image/png"
+
+[[outputs]]
+id = "LDD61cHVrNKQkxWvi_I-X"
+uri = "file://generated-artifacts/groft/16x/view-saved-16x.png"
+type = "image"
+title = "GROFT Saved Traditions label — 16× PNG"
+description = "16× transparent PNG master for the Saved Traditions tab."
+logical_id = "36a2c4b1-3ceb-4fe2-a0cb-fca767602242"
+content_hash = "sha256:714103a6c8f672641bee0782d7c653f4741310e1cbb2b1e7be4b4cef61cf6c13"
+size = 873886
+mtime_ms = 1794943457510
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/36a2c4b1-3ceb-4fe2-a0cb-fca767602242/2b57b1b1-dfa9-4b72-adc7-21556203b08f"
+storage_version_token = "1794943817835439"
+content_type = "image/png"
