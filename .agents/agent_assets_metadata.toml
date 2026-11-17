@@ -98,3 +98,73 @@ mtime_ms = 1794943457510
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/36a2c4b1-3ceb-4fe2-a0cb-fca767602242/2b57b1b1-dfa9-4b72-adc7-21556203b08f"
 storage_version_token = "1794943817835439"
 content_type = "image/png"
+
+[[outputs]]
+id = "YutdJXVlEpskrED_e962D"
+uri = "file://generated-artifacts/groft/1080p/groft-logo.png"
+type = "image"
+title = "GROFT logo — 1080px PNG"
+description = "Transparent 1080-pixel-high export of the clean vector recreation."
+logical_id = "7c05db74-b330-4b45-bb0d-6d270792cc36"
+content_hash = "sha256:d9df59622c51b745b1b0ac48df2051ab99e9ef974e1e847d24ac986d2a1105d0"
+size = 176589
+mtime_ms = 1794945100374
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/7c05db74-b330-4b45-bb0d-6d270792cc36/d944a782-dabc-4f7f-a3d5-7dd918d1d885"
+storage_version_token = "1794945159424960"
+content_type = "image/png"
+
+[[outputs]]
+id = "AIVNzhq9O3gNFCIMQXMFU"
+uri = "file://generated-artifacts/groft/1080p/groft-tagline.png"
+type = "image"
+title = "GROFT tagline — 1080px PNG"
+description = "Transparent 1080-pixel-high export of the clean vector recreation."
+logical_id = "a16fba82-71fc-4052-82e8-eb5d08620f97"
+content_hash = "sha256:e59bff5703960691b2d914a0ae7b51334c3f138128d3eb3290dc043d13b57bb5"
+size = 966525
+mtime_ms = 1794945105210
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/a16fba82-71fc-4052-82e8-eb5d08620f97/1c75ff2e-df51-462e-9053-916faa2d2343"
+storage_version_token = "1794945159944625"
+content_type = "image/png"
+
+[[outputs]]
+id = "XXAfOc6fY8HOvZM8rwY3M"
+uri = "file://generated-artifacts/groft/1080p/view-globe.png"
+type = "image"
+title = "Globe — 1080px PNG"
+description = "Transparent 1080-pixel-high export of the clean vector recreation."
+logical_id = "3c9afb55-bb57-43bc-880b-10ac19e8db46"
+content_hash = "sha256:ed302729574288a12d6852fe6781ebbfe9b07933d7f071ce72152cda6ed75a7d"
+size = 197080
+mtime_ms = 1794945106166
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/3c9afb55-bb57-43bc-880b-10ac19e8db46/3f1c2b35-8223-4376-9c40-f08bc9658764"
+storage_version_token = "1794945160479534"
+content_type = "image/png"
+
+[[outputs]]
+id = "ME7fCE0_lIjLSDBKuSiL4"
+uri = "file://generated-artifacts/groft/1080p/view-index.png"
+type = "image"
+title = "Index — 1080px PNG"
+description = "Transparent 1080-pixel-high export of the clean vector recreation."
+logical_id = "d0d99bd7-39ca-497d-aa6f-78f3ccdcda83"
+content_hash = "sha256:37551b21320634b9bb6e5aa61efd3e773de9ba4432c96ed00cbb2aa9be2b58b0"
+size = 160165
+mtime_ms = 1794945107062
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/d0d99bd7-39ca-497d-aa6f-78f3ccdcda83/52f93bde-1983-4417-bd9e-e94a806d51bf"
+storage_version_token = "1794945160998515"
+content_type = "image/png"
+
+[[outputs]]
+id = "qbxpXLyZw3vQvjTitikWv"
+uri = "file://generated-artifacts/groft/1080p/view-saved.png"
+type = "image"
+title = "Saved Traditions — 1080px PNG"
+description = "Transparent 1080-pixel-high export of the clean vector recreation."
+logical_id = "4cbbedfe-2e7f-4f08-87f2-d2f059a18a6b"
+content_hash = "sha256:176bd015b54bcdddc6494a6292550d72e01ed4a86d208446e2e7446618fab6eb"
+size = 560767
+mtime_ms = 1794945109834
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/4cbbedfe-2e7f-4f08-87f2-d2f059a18a6b/2e537a56-c4c5-4fa8-8d8b-eebbc8cbb117"
+storage_version_token = "1794945161502535"
+content_type = "image/png"

@@ -1,0 +1,1 @@
+- [Account favorites](account-favorites.md) — guest saves merge once into the next signed-in account; signed-out browsing stays public.

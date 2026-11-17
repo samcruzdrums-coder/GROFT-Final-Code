@@ -710,6 +710,10 @@ body.globe-dragging, body.globe-dragging * { -webkit-user-select: none !importan
 .auth-logo { display:block; width:auto; height:72px; max-width:min(260px,100%); object-fit:contain; object-position:left center; margin:0 auto 12px; }
 .view-heading { display:flex; justify-content:center; align-items:center; margin:8px 0 16px; padding:0 18px; border:1px solid var(--line); border-radius:12px 3px 12px 3px; background:linear-gradient(110deg,rgba(255,255,255,.035),transparent 70%); }
 .view-tabs { display:flex; justify-content:center; align-items:center; gap:clamp(18px,5vw,64px); width:100%; margin:0; border:0; }
+.view-heading .view-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;width:100%;max-width:760px;margin-inline:auto}
+.view-heading .view-tab{width:100%;min-width:0;padding-inline:6px}
+.view-heading .view-tab-art{max-width:100%;height:22px}
+@media(max-width:640px){.view-heading .view-tab-art{height:clamp(11px,3vw,17px)}}
 .view-tab { display:flex; align-items:center; justify-content:center; gap:10px; padding:19px 28px 17px; margin:0; border:0; border-bottom:4px solid transparent; background:none; color:var(--mute); cursor:pointer; font:700 clamp(23px,3vw,30px)/1.1 'Bricolage Grotesque',sans-serif; letter-spacing:.015em; transition:color .15s,border-color .15s; }
 .view-tab small { padding:4px 10px; border:1px solid var(--line); border-radius:99px; font:600 11px 'Bricolage Grotesque',sans-serif; }
 .view-tab:hover { color:var(--ink); }
@@ -863,4 +867,17 @@ html body{background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)
 .account-actions .account-primary:hover{background:#107542}
 .account-identity{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#234132;font:600 12px 'Bricolage Grotesque',sans-serif}
 .auth-screen{display:grid;min-height:100dvh;place-items:center;padding:24px;background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)}
+.account-notice{padding:12px 16px;margin:12px 0;background:#f5f9fa;border:1px solid #a2b8ae;border-radius:10px;color:#234132;font:400 13px 'Bricolage Grotesque',sans-serif}
+.account-notice button{margin-left:12px;text-decoration:underline;cursor:pointer;color:#107542}
+.save-button:disabled{opacity:.6;cursor:wait}
+.cl-formButtonPrimary,.cl-formButtonPrimary span{color:#fff!important}
+.welcome-sign-in{width:calc(100% - 32px);max-width:440px;padding:32px;border:1px solid #c5d3ce;border-radius:20px;background:#f5f9fa;color:#173128;text-align:center;gap:16px}
+.welcome-sign-in-logo{width:220px;max-width:85%;height:auto;margin:0 auto}
+.welcome-sign-in-title{font:700 25px 'Bricolage Grotesque',sans-serif}
+.welcome-sign-in-description{color:#52695f;font:400 14px/1.6 'Bricolage Grotesque',sans-serif}
+.welcome-sign-in-actions{display:grid;gap:10px;margin-top:4px}
+.welcome-sign-in-actions button{min-height:44px;border:1px solid #9cb8aa;border-radius:99px;background:#fff;color:#176b43;font:600 14px 'Bricolage Grotesque',sans-serif;cursor:pointer}
+.welcome-sign-in-actions .welcome-sign-in-primary{background:#168c52;border-color:#168c52;color:#fff}
+.welcome-sign-in-actions .welcome-sign-in-primary:hover{background:#107542}
+.welcome-sign-in-actions button:hover{border-color:#168c52}
 @media(max-width:760px){.account-actions{width:100%;justify-content:flex-start}.account-identity{max-width:180px}}

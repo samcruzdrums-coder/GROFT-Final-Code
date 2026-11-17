@@ -6,6 +6,7 @@ import NotFound from '@/pages/not-found';
 import { Redirect, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { ArrowRight, AudioLines, Compass, Heart, LocateFixed, Minus, Music2, Plus, Search, Shuffle, X } from 'lucide-react';
 import { EarthGlobeCanvas } from '@/components/EarthGlobeCanvas';
+import { WelcomeSignInPrompt } from '@/components/WelcomeSignInPrompt';
 import { ClerkProvider, Show, SignIn, SignUp, useAuth, useClerk, useUser } from '@clerk/react';
 import { publishableKeyFromHost } from '@clerk/react/internal';
 import { shadcn } from '@clerk/themes';
@@ -242,7 +243,8 @@ function Home(){
   useEffect(()=>{
     if(!isLoaded)return;
     if(!userId){favoriteSyncUserRef.current=null;const guestFavorites=readFavs();favoritesRef.current=guestFavorites;setFavorites(guestFavorites);return;}
-    if(!favoriteQuery.data||favoriteSyncUserRef.current===userId)return;
+    if(!favoriteQuery.data)return;
+    if(favoriteSyncUserRef.current===userId){if(!addFavorites.isPending&&!removeFavorite.isPending){favoritesRef.current=favoriteQuery.data.traditionIds;setFavorites(favoriteQuery.data.traditionIds);}return;}
     favoriteSyncUserRef.current=userId;
     const guestFavorites=readFavs();
     if(guestFavorites.length){
@@ -252,7 +254,6 @@ function Home(){
       try{localStorage.setItem(`${storageFav}:${userId}`,JSON.stringify(favoriteQuery.data.traditionIds));}catch{}
     }
   },[isLoaded,userId,favoriteQuery.data]);
-  useEffect(()=>{if(!isLoaded)return;try{if(userId){if(favoriteSyncUserRef.current===userId)localStorage.setItem(`${storageFav}:${userId}`,JSON.stringify(favorites));}else localStorage.setItem(storageFav,JSON.stringify(favorites));}catch{}},[favorites,isLoaded,userId]);
  useEffect(()=>{const el=svgRef.current;if(!el)return;const h=(e:globalThis.WheelEvent)=>{e.preventDefault();stopSpin();setZoom(z=>Math.max(1,Math.min(5,z*(e.deltaY<0?1.2:1/1.2))))};el.addEventListener('wheel',h,{passive:false});return()=>el.removeEventListener('wheel',h)},[]);
  useEffect(()=>{if(!active)return;const h=(e:globalThis.KeyboardEvent)=>{if(e.key==='Escape')setSelected('')};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[active]);
  useEffect(()=>()=>{if(timerRef.current)window.clearInterval(timerRef.current);audioRef.current?.close()},[]);
@@ -277,12 +278,15 @@ function Home(){
  const filteredSrc=active?.src?.filter(s=>/^https?:\/\//i.test(s))||[];
  const selectedIsSaved=Boolean(active&&favorites.includes(active.id));
  return <main className="groft-shell">
+    <WelcomeSignInPrompt/>
     <header className="topbar">
-    <div className="brand-lockup"><button type="button" className="brand-home" onClick={goHome} aria-label="GROFT — back to home" title="Back to home" data-testid="button-home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}brand/groft-logo.webp`} alt="GROFT logo"/></button><span className="brand-rule"></span><img className="brand-tagline" src={`${import.meta.env.BASE_URL}brand/groft-tagline.webp`} alt="A global repository of folkloric traditions"/></div>
+    <div className="brand-lockup"><button type="button" className="brand-home" onClick={goHome} aria-label="GROFT — back to home" title="Back to home" data-testid="button-home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}brand/groft-logo.svg`} alt="GROFT logo"/></button><span className="brand-rule"></span><img className="brand-tagline" src={`${import.meta.env.BASE_URL}brand/groft-tagline.svg`} alt="A global repository of folkloric traditions"/></div>
      <AuthControls/>
   </header>
+  {(report||favoriteQuery.isError)&&<div className="account-notice" role="status" data-testid="status-account-sync">{report||'Your saved traditions could not load.'}<button type="button" onClick={()=>{setReport('');favoriteSyncUserRef.current=null;void favoriteQuery.refetch()}} data-testid="button-retry-sync">Try again</button></div>}
+  {tab==='saved'&&!userId&&<p className="account-notice">These saves are stored in this browser. Sign in to keep them in your account across devices.</p>}
   
-   <section className="view-heading" aria-label="Choose a view"><div className="view-tabs" role="tablist" aria-label="Views">{(['globe','index','saved'] as const).map(k=><button key={k} type="button" role="tab" id={`tab-${k}`} aria-label={k==='globe'?'Globe':k==='index'?'Index':'Saved traditions'} title={k==='globe'?'Globe':k==='index'?'Index':'Saved traditions'} aria-selected={tab===k} className={`view-tab ${tab===k?'active':''}`} data-testid={`tab-${k}`} onClick={()=>{setTab(k);if(k==='saved')setSavedOnly(true);else setSavedOnly(false)}}><img className="view-tab-art" src={`${import.meta.env.BASE_URL}brand/view-${k}.webp`} alt=""/></button>)}</div></section>
+   <section className="view-heading" aria-label="Choose a view"><div className="view-tabs" role="tablist" aria-label="Views">{(['globe','index','saved'] as const).map(k=><button key={k} type="button" role="tab" id={`tab-${k}`} aria-label={k==='globe'?'Globe':k==='index'?'Index':'Saved traditions'} title={k==='globe'?'Globe':k==='index'?'Index':'Saved traditions'} aria-selected={tab===k} className={`view-tab ${tab===k?'active':''}`} data-testid={`tab-${k}`} onClick={()=>{setTab(k);if(k==='saved')setSavedOnly(true);else setSavedOnly(false)}}><img className="view-tab-art" src={`${import.meta.env.BASE_URL}brand/view-${k}.svg`} alt=""/></button>)}</div></section>
   <div className="main-grid" data-tab={tab}>
    <section className="map-panel" hidden={tab!=='globe'} aria-label="Interactive traditions globe">
     <div className="globe-wrap">
@@ -306,7 +310,7 @@ function Home(){
    {active&&<div className="note-overlay" onClick={e=>{if(e.target===e.currentTarget)setSelected('')}}>
    <article className="detail-panel note-modal" role="dialog" aria-modal="true" aria-label="Field note" aria-live="polite" data-testid="detail-tradition"><button type="button" className="note-close" aria-label="Close field note" data-testid="button-close-note" onClick={()=>setSelected('')}><X size={22}/></button>
     {active?<>
-     <div className="detail-topline"><span className="section-index">FIELD NOTE / {active.r.toUpperCase()}</span><button type="button" className={`save-button ${selectedIsSaved?'is-saved':''}`} onClick={()=>toggleFavorite(active.id)} disabled={!isLoaded||(Boolean(userId)&&(!favoriteQuery.data||favoriteQuery.isLoading))||addFavorites.isPending||removeFavorite.isPending} aria-label={selectedIsSaved?'Remove saved tradition':'Save tradition'} aria-pressed={selectedIsSaved} data-testid={`button-save-${active.id}`}><Heart size={17} fill={selectedIsSaved?'currentColor':'none'}/>{selectedIsSaved?'Saved':'Save'}</button></div>
+     <div className="detail-topline"><span className="section-index">FIELD NOTE / {active.r.toUpperCase()}</span><button type="button" className={`save-button ${selectedIsSaved?'is-saved':''}`} onClick={()=>toggleFavorite(active.id)} disabled={!isLoaded||(Boolean(userId)&&(!favoriteQuery.data||favoriteQuery.isLoading))||addFavorites.isPending||removeFavorite.isPending} aria-label={selectedIsSaved?'Remove saved tradition':'Save tradition'} aria-pressed={selectedIsSaved} data-testid={`button-save-${active.id}`}><Heart size={17} fill={selectedIsSaved?'currentColor':'none'}/>{addFavorites.isPending||removeFavorite.isPending?'Syncing…':selectedIsSaved?'Saved':'Save'}</button></div>
      
      <h2 className="detail-title" data-testid={`text-name-${active.id}`}>{active.n}</h2><div className="detail-place"><Compass size={14}/>{active.p}<span className="coord">{Math.abs(active.la).toFixed(1)}° {active.la>=0?'N':'S'} / {Math.abs(active.lo).toFixed(1)}° {active.lo>=0?'E':'W'}</span></div>
      <div className="detail-visual" data-slot="video" data-testid="asset-video">
@@ -343,7 +347,7 @@ function Home(){
 const clerkAppearance={
  theme:shadcn,
  cssLayerName:"clerk",
- options:{logoPlacement:"inside" as const,logoLinkUrl:basePath||"/",logoImageUrl:`${window.location.origin}${basePath}/brand/groft-logo.webp`},
+ options:{logoPlacement:"inside" as const,logoLinkUrl:basePath||"/",logoImageUrl:`${window.location.origin}${basePath}/logo.svg`},
  variables:{colorPrimary:"#168c52",colorForeground:"#173128",colorMutedForeground:"#5d7068",colorBackground:"#f5f9fa",colorInput:"#ffffff",colorInputForeground:"#173128",colorDanger:"#b42318",colorNeutral:"#263b31",fontFamily:"'Bricolage Grotesque', sans-serif",borderRadius:"1rem"},
  elements:{cardBox:{backgroundColor:"#f5f9fa",borderRadius:"20px",width:"min(440px, calc(100vw - 32px))",boxShadow:"0 24px 70px rgba(20,45,36,.16)"},card:{backgroundColor:"transparent",boxShadow:"none",border:"none"},footer:{backgroundColor:"transparent",border:"none"},headerTitle:{color:"#173128",fontWeight:"700"},headerSubtitle:{color:"#5d7068"},formFieldLabel:{color:"#173128"},formFieldInput:{color:"#173128",backgroundColor:"#fff",borderRadius:"9px"},formButtonPrimary:{backgroundColor:"#168c52",color:"#fff"},footerActionText:{color:"#5d7068"},footerActionLink:{color:"#168c52"},socialButtonsBlockButtonText:{color:"#173128"},dividerText:{color:"#5d7068"}}
 };
@@ -361,13 +365,13 @@ function ClerkQueryClientCacheInvalidator(){
 function SignInPage(){return <div className="auth-screen"><SignIn routing="path" path={`${basePath}/sign-in`} signUpUrl={`${basePath}/sign-up`}/></div>}
 function SignUpPage(){return <div className="auth-screen"><SignUp routing="path" path={`${basePath}/sign-up`} signInUrl={`${basePath}/sign-in`}/></div>}
 function HomeRedirect(){return <><Show when="signed-in"><Redirect to="/user-portal"/></Show><Show when="signed-out"><Home/></Show></>}
-function UserPortal(){return <><Show when="signed-in"><Home/></Show><Show when="signed-out"><Redirect to="/"/></Show></>}
+function UserPortal(){const{user}=useUser();return <><Show when="signed-in"><Home key={user?.id}/></Show><Show when="signed-out"><Redirect to="/"/></Show></>}
 function Router(){return <RoutedErrorBoundary><Switch><Route path="/" component={HomeRedirect}/><Route path="/user-portal" component={UserPortal}/><Route path="/sign-in/*?" component={SignInPage}/><Route path="/sign-up/*?" component={SignUpPage}/><Route component={NotFound}/></Switch></RoutedErrorBoundary>}
 function RoutedErrorBoundary({children}:{children:ReactNode}){const [location]=useLocation();return <ErrorBoundary resetKey={location}>{children}</ErrorBoundary>}
 function ClerkApp(){
  const[,setLocation]=useLocation();
  const stripBase=(path:string)=>basePath&&path.startsWith(basePath)?path.slice(basePath.length)||"/":path;
- return <ClerkProvider publishableKey={clerkPubKey} proxyUrl={clerkProxyUrl} appearance={clerkAppearance} signInUrl={`${basePath}/sign-in`} signUpUrl={`${basePath}/sign-up`} localization={{signIn:{start:{title:"Welcome back",subtitle:"Sign in to return to GROFT"}},signUp:{start:{title:"Join GROFT",subtitle:"Save the traditions you want to revisit"}}}} routerPush={to=>setLocation(stripBase(to))} routerReplace={to=>setLocation(stripBase(to),{replace:true})}><QueryClientProvider client={queryClient}><ClerkQueryClientCacheInvalidator/><TooltipProvider><Router/><Toaster/></TooltipProvider></QueryClientProvider></ClerkProvider>;
+ return <ClerkProvider publishableKey={clerkPubKey} proxyUrl={clerkProxyUrl} appearance={clerkAppearance} signInUrl={`${basePath}/sign-in`} signUpUrl={`${basePath}/sign-up`} signInFallbackRedirectUrl={`${basePath}/user-portal`} signUpFallbackRedirectUrl={`${basePath}/user-portal`} localization={{signIn:{start:{title:"Welcome back",subtitle:"Sign in to return to GROFT"}},signUp:{start:{title:"Join GROFT",subtitle:"Save the traditions you want to revisit"}}}} routerPush={to=>setLocation(stripBase(to))} routerReplace={to=>setLocation(stripBase(to),{replace:true})}><QueryClientProvider client={queryClient}><ClerkQueryClientCacheInvalidator/><TooltipProvider><Router/><Toaster/></TooltipProvider></QueryClientProvider></ClerkProvider>;
 }
 function App(){return <WouterRouter base={basePath}><ClerkApp/></WouterRouter>}
 export default App;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2392" height="1080" viewBox="0 0 897 405">
+<defs>
+<linearGradient id="disc"><stop stop-color="#424444"/><stop offset=".5" stop-color="#8d8e8d"/><stop offset="1" stop-color="#e7e4e5"/></linearGradient>
+<linearGradient id="triangle"><stop stop-color="#12c21c"/><stop offset=".55" stop-color="#098650"/><stop offset="1" stop-color="#003865"/></linearGradient>
+<linearGradient id="word"><stop stop-color="#009852"/><stop offset=".45" stop-color="#13ae19"/><stop offset="1" stop-color="#00394d"/></linearGradient>
+</defs>
+<circle cx="202.5" cy="202.5" r="201.5" fill="url(#disc)"/>
+<path d="M72 127L319 124L198 338Z" fill="#48c245" opacity=".45"/>
+<path d="M63 118L306 116L186 327Z" fill="url(#triangle)"/>
+<text x="310" y="280" font-family="DejaVu Sans,Arial,sans-serif" font-size="170" font-weight="700" textLength="582" lengthAdjust="spacingAndGlyphs" fill="url(#word)">GROFT</text>
+</svg>

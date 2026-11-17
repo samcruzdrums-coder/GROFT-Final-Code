@@ -38,8 +38,9 @@ router.post("/favorites", async (req, res, next) => {
   const userId = authenticatedUserId(req, res);
   if (!userId) return;
   try {
-    const input = AddFavoritesBody.parse(req.body);
-    const traditionIds = [...new Set(input.traditionIds)];
+    const input = AddFavoritesBody.safeParse(req.body);
+    if (!input.success) { res.status(400).json({ error: "Provide up to 5000 valid tradition IDs." }); return; }
+    const traditionIds = [...new Set(input.data.traditionIds)];
     if (traditionIds.length) {
       await db
         .insert(favoritesTable)
@@ -56,7 +57,9 @@ router.delete("/favorites/:traditionId", async (req, res, next) => {
   const userId = authenticatedUserId(req, res);
   if (!userId) return;
   try {
-    const { traditionId } = RemoveFavoriteParams.parse(req.params);
+    const params = RemoveFavoriteParams.safeParse(req.params);
+    if (!params.success) { res.status(400).json({ error: "Invalid tradition ID." }); return; }
+    const { traditionId } = params.data;
     await db
       .delete(favoritesTable)
       .where(

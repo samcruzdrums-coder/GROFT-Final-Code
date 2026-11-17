@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="108" viewBox="0 0 320 108" role="img" aria-label="GROFT">
+  <defs>
+    <linearGradient id="disc"><stop stop-color="#424443"/><stop offset="1" stop-color="#d9dcdb"/></linearGradient>
+    <linearGradient id="green"><stop stop-color="#17bd19"/><stop offset="1" stop-color="#00415c"/></linearGradient>
+  </defs>
+  <circle cx="54" cy="54" r="52" fill="url(#disc)"/>
+  <path d="M18 28H88L53 88Z" fill="url(#green)"/>
+  <text x="93" y="72" fill="url(#green)" font-family="Arial, sans-serif" font-size="53" font-weight="700">GROFT</text>
+</svg>
