@@ -9,8 +9,8 @@ Keep GROFT lettering as font-independent vector outlines rather than repeatedly 
 
 **How to apply:** Preserve the approved wording and green-to-blue palette, use natural glyph proportions, and inspect actual rendered sizes rather than relying on export dimensions.
 
-The Index label should align with the globe centerline. The user requested even spacing between all three tabs after the edge-gap layout was shown.
+The user wants Globe aligned left, Index centered over the globe, and Saved Traditions aligned right within the navigation row.
 
-**Why:** Centering the combined row moved Index off the globe's center, and the user still found the edge-gap layout uneven.
+**Why:** The user explicitly clarified that the outer labels should not be centered in their columns.
 
-**How to apply:** Keep tab centers equally spaced and check Index against the globe, not just the outer navigation container.
+**How to apply:** Retain the three equal navigation columns, but align their contents left, center, and right respectively.
