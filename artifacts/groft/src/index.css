@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap');
+@layer theme, base, clerk, components, utilities;
 @import 'tailwindcss';
+@import '@clerk/themes/shadcn.css';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
 
@@ -853,3 +855,12 @@ html body{background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)
 
 .waves i:nth-child(1){opacity:.42}.waves i:nth-child(2){opacity:.52}.waves i:nth-child(3){opacity:.64}.waves i:nth-child(4){opacity:.88}
 .map-panel,.directory-panel{background:rgba(252,252,252,.6)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+
+.account-actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap}
+.account-actions button{min-height:36px;padding:8px 14px;border:1px solid rgba(34,68,49,.22);border-radius:99px;background:rgba(255,255,255,.62);color:#234132;font:600 12px 'Bricolage Grotesque',sans-serif;cursor:pointer}
+.account-actions button:hover{background:#fff;border-color:#168c52}
+.account-actions .account-primary{background:#168c52;color:#fff;border-color:#168c52}
+.account-actions .account-primary:hover{background:#107542}
+.account-identity{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#234132;font:600 12px 'Bricolage Grotesque',sans-serif}
+.auth-screen{display:grid;min-height:100dvh;place-items:center;padding:24px;background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)}
+@media(max-width:760px){.account-actions{width:100%;justify-content:flex-start}.account-identity{max-width:180px}}

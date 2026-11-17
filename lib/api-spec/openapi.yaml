@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: favorites
+    description: Account-scoped saved traditions
 paths:
   /healthz:
     get:
@@ -24,6 +26,61 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /favorites:
+    get:
+      operationId: listFavorites
+      tags: [favorites]
+      summary: List the signed-in user's saved traditions
+      responses:
+        "200":
+          description: Saved tradition IDs
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FavoriteList"
+        "401":
+          description: Sign-in required
+    post:
+      operationId: addFavorites
+      tags: [favorites]
+      summary: Add saved traditions to the signed-in user's collection
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FavoriteInput"
+      responses:
+        "200":
+          description: Updated saved tradition IDs
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FavoriteList"
+        "401":
+          description: Sign-in required
+  /favorites/{traditionId}:
+    delete:
+      operationId: removeFavorite
+      tags: [favorites]
+      summary: Remove one saved tradition
+      parameters:
+        - name: traditionId
+          in: path
+          required: true
+          schema:
+            type: string
+            minLength: 1
+            maxLength: 128
+      responses:
+        "200":
+          description: Updated saved tradition IDs
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FavoriteList"
+        "401":
+          description: Sign-in required
 components:
   schemas:
     HealthStatus:
@@ -33,4 +90,26 @@ components:
           type: string
       required:
         - status
+    FavoriteList:
+      type: object
+      properties:
+        traditionIds:
+          type: array
+          items:
+            type: string
+      required:
+        - traditionIds
+    FavoriteInput:
+      type: object
+      properties:
+        traditionIds:
+          type: array
+          maxItems: 5000
+          uniqueItems: true
+          items:
+            type: string
+            minLength: 1
+            maxLength: 128
+      required:
+        - traditionIds
 

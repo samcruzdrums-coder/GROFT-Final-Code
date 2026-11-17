@@ -3,9 +3,21 @@ import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
-import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import { Redirect, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { ArrowRight, AudioLines, Compass, Heart, LocateFixed, Minus, Music2, Plus, Search, Shuffle, X } from 'lucide-react';
 import { EarthGlobeCanvas } from '@/components/EarthGlobeCanvas';
+import { ClerkProvider, Show, SignIn, SignUp, useAuth, useClerk, useUser } from '@clerk/react';
+import { publishableKeyFromHost } from '@clerk/react/internal';
+import { shadcn } from '@clerk/themes';
+import { QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/react-query';
+import { getListFavoritesQueryKey, useAddFavorites, useListFavorites, useRemoveFavorite } from '@workspace/api-client-react';
+
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const clerkPubKey = publishableKeyFromHost(window.location.hostname, import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+const clerkProxyUrl = import.meta.env.VITE_CLERK_PROXY_URL;
+const queryClient = new QueryClient();
+const favoritesQueryKey = (userId:string) => [...getListFavoritesQueryKey(), userId] as const;
+if (!clerkPubKey) throw new Error('Missing VITE_CLERK_PUBLISHABLE_KEY.');
 
 type Region = 'Europe' | 'Africa' | 'Asia' | 'Middle East' | 'Americas' | 'Oceania';
 type Status = 'draft' | 'review' | 'verified';
@@ -212,8 +224,13 @@ const project=(lon:number,lat:number,center:{lo:number;la:number},radius:number)
 const polygonPath=(poly:number[][],center:{lo:number;la:number},radius:number)=>{const parts:string[]=[];for(let i=0;i<poly.length;i++){const [lo,la]=poly[i];const p=project(lo,la,center,radius);parts.push(`${i?'L':'M'}${p.x.toFixed(1)},${p.y.toFixed(1)}`);}return parts.join(' ')+' Z';};
 
 function Home(){
-  const favoriteStorageKey=storageFav;
-  const [userEntries,setUserEntries]=useState<Tradition[]>(readUser),[shipped,setShipped]=useState<Tradition[]>([]),[recordingCatalog,setRecordingCatalog]=useState<RecordingTradition[]>([]),[imageCatalog,setImageCatalog]=useState<ImageTradition[]>([]),[favorites,setFavorites]=useState<string[]>(()=>readFavs(favoriteStorageKey)),[selected,setSelected]=useState(''),[tab,setTab]=useState<'globe'|'index'|'saved'>('globe'),[query,setQuery]=useState(''),[region,setRegion]=useState('All'),[status,setStatus]=useState(''),[savedOnly,setSavedOnly]=useState(false),[report,setReport]=useState(''),[center,setCenter]=useState({lo:10,la:25}),[zoom,setZoom]=useState(1),[explore,setExplore]=useState<{la:number;lo:number}|null>(null),[playing,setPlaying]=useState(false),[beat,setBeat]=useState(-1),[earthReady,setEarthReady]=useState(false);
+  const {user,isLoaded}=useUser(), userId=user?.id??null;
+  const favoriteQuery=useListFavorites({query:{enabled:Boolean(userId),queryKey:userId?favoritesQueryKey(userId):getListFavoritesQueryKey()}});
+  const addFavorites=useAddFavorites(), removeFavorite=useRemoveFavorite();
+  const queryClient=useQueryClient();
+  const [userEntries,setUserEntries]=useState<Tradition[]>(readUser),[shipped,setShipped]=useState<Tradition[]>([]),[recordingCatalog,setRecordingCatalog]=useState<RecordingTradition[]>([]),[imageCatalog,setImageCatalog]=useState<ImageTradition[]>([]),[favorites,setFavorites]=useState<string[]>(()=>readFavs()),[selected,setSelected]=useState(''),[tab,setTab]=useState<'globe'|'index'|'saved'>('globe'),[query,setQuery]=useState(''),[region,setRegion]=useState('All'),[status,setStatus]=useState(''),[savedOnly,setSavedOnly]=useState(false),[report,setReport]=useState(''),[center,setCenter]=useState({lo:10,la:25}),[zoom,setZoom]=useState(1),[explore,setExplore]=useState<{la:number;lo:number}|null>(null),[playing,setPlaying]=useState(false),[beat,setBeat]=useState(-1),[earthReady,setEarthReady]=useState(false);
+  const favoriteSyncUserRef=useRef<string|null>(null);
+  const previousAuthUserRef=useRef<string|null|undefined>(undefined);
   const svgRef=useRef<SVGSVGElement>(null),dragRef=useRef<{x:number;y:number;distance:number}|null>(null),audioRef=useRef<AudioContext|null>(null),timerRef=useRef<number|undefined>(undefined),spinRef=useRef(0),favoritesRef=useRef(favorites);
  favoritesRef.current=favorites;
  const entries=useMemo(()=>mergeById(builtins,shipped,userEntries),[shipped,userEntries]);
@@ -221,7 +238,21 @@ function Home(){
  const active=selected?entries.find(d=>d.id===selected):undefined; const activeRecording=active?recordingCatalog.find(x=>x.tradition_id===active.id):undefined; const activeImage=active?imageCatalog.find(x=>x.tradition_id===active.id):undefined;
   useEffect(()=>{let live=true;fetch(`${import.meta.env.BASE_URL}traditions.json`).then(r=>r.ok?r.json():[]).then(data=>{if(live&&Array.isArray(data))setShipped(data)}).catch(()=>{});return()=>{live=false}},[]);
   useEffect(()=>{let live=true;Promise.all([fetch(`${import.meta.env.BASE_URL}recordings.json`).then(r=>r.ok?r.json():null),fetch(`${import.meta.env.BASE_URL}tradition-images.json`).then(r=>r.ok?r.json():null)]).then(([audio,images])=>{if(!live)return;if(Array.isArray(audio?.traditions))setRecordingCatalog(audio.traditions);if(Array.isArray(images?.traditions))setImageCatalog(images.traditions)}).catch(()=>{});return()=>{live=false}},[]);
- useEffect(()=>{try{localStorage.setItem(favoriteStorageKey,JSON.stringify(favorites))}catch{}},[favorites,favoriteStorageKey]);
+  useEffect(()=>{if(!isLoaded||previousAuthUserRef.current===userId)return;previousAuthUserRef.current=userId;favoriteSyncUserRef.current=null;const next=userId?[]:readFavs();favoritesRef.current=next;setFavorites(next);},[isLoaded,userId]);
+  useEffect(()=>{
+    if(!isLoaded)return;
+    if(!userId){favoriteSyncUserRef.current=null;const guestFavorites=readFavs();favoritesRef.current=guestFavorites;setFavorites(guestFavorites);return;}
+    if(!favoriteQuery.data||favoriteSyncUserRef.current===userId)return;
+    favoriteSyncUserRef.current=userId;
+    const guestFavorites=readFavs();
+    if(guestFavorites.length){
+      addFavorites.mutate({data:{traditionIds:guestFavorites}},{onSuccess:(result)=>{favoritesRef.current=result.traditionIds;setFavorites(result.traditionIds);try{localStorage.removeItem(storageFav);localStorage.setItem(`${storageFav}:${userId}`,JSON.stringify(result.traditionIds));}catch{}queryClient.setQueryData(favoritesQueryKey(userId),result);},onError:()=>{favoriteSyncUserRef.current=null;setReport('Your browser-saved traditions could not sync. Please try again.') }});
+    }else{
+      favoritesRef.current=favoriteQuery.data.traditionIds;setFavorites(favoriteQuery.data.traditionIds);
+      try{localStorage.setItem(`${storageFav}:${userId}`,JSON.stringify(favoriteQuery.data.traditionIds));}catch{}
+    }
+  },[isLoaded,userId,favoriteQuery.data]);
+  useEffect(()=>{if(!isLoaded)return;try{if(userId){if(favoriteSyncUserRef.current===userId)localStorage.setItem(`${storageFav}:${userId}`,JSON.stringify(favorites));}else localStorage.setItem(storageFav,JSON.stringify(favorites));}catch{}},[favorites,isLoaded,userId]);
  useEffect(()=>{const el=svgRef.current;if(!el)return;const h=(e:globalThis.WheelEvent)=>{e.preventDefault();stopSpin();setZoom(z=>Math.max(1,Math.min(5,z*(e.deltaY<0?1.2:1/1.2))))};el.addEventListener('wheel',h,{passive:false});return()=>el.removeEventListener('wheel',h)},[]);
  useEffect(()=>{if(!active)return;const h=(e:globalThis.KeyboardEvent)=>{if(e.key==='Escape')setSelected('')};window.addEventListener('keydown',h);return()=>window.removeEventListener('keydown',h)},[active]);
  useEffect(()=>()=>{if(timerRef.current)window.clearInterval(timerRef.current);audioRef.current?.close()},[]);
@@ -239,15 +270,16 @@ function Home(){
  const handlePointerMove=(e:PointerEvent<SVGSVGElement>)=>{if(!dragRef.current)return;const dx=e.clientX-dragRef.current.x,dy=e.clientY-dragRef.current.y;dragRef.current.distance+=Math.abs(dx)+Math.abs(dy);dragRef.current.x=e.clientX;dragRef.current.y=e.clientY;const rect=e.currentTarget.getBoundingClientRect();setCenter(c=>({lo:c.lo-(Math.cos(c.la*Math.PI/180)<0?-1:1)*dx/rect.width*100/zoom,la:wrap(c.la+dy/rect.height*100/zoom,180)}));};
  const handlePointerUp=(e:PointerEvent<SVGSVGElement>)=>{document.body.classList.remove('globe-dragging');if(!dragRef.current)return;const moved=dragRef.current.distance;dragRef.current=null;if(moved>5)return;const point=coordFrom(e);if(!point)return;setExplore(point);};
  const handleKey=(e:KeyboardEvent<SVGSVGElement>)=>{stopSpin();const delta:Record<string,[number,number]>={ArrowLeft:[-10,0],ArrowRight:[10,0],ArrowUp:[0,8],ArrowDown:[0,-8]};if(delta[e.key]){e.preventDefault();setCenter(v=>({lo:v.lo+(Math.cos(v.la*Math.PI/180)<0?-1:1)*delta[e.key][0],la:wrap(v.la+delta[e.key][1],180)}));}else if(e.key==='+'||e.key==='='){e.preventDefault();zoomBy(1.3);}else if(e.key==='-'){e.preventDefault();zoomBy(1/1.3);}else if(e.key==='Enter'&&active){e.preventDefault();choose(active.id);}};
-  const toggleFavorite=(id:string)=>{const saved=!favoritesRef.current.includes(id);setFavorites(prev=>saved?(prev.includes(id)?prev:[...prev,id]):prev.filter(x=>x!==id));};
+  const toggleFavorite=(id:string)=>{const previous=favoritesRef.current,saved=!previous.includes(id),next=saved?[...previous,id]:previous.filter(x=>x!==id);favoritesRef.current=next;setFavorites(next);if(!userId){try{localStorage.setItem(storageFav,JSON.stringify(next))}catch{}return;}const onSuccess=(result:{traditionIds:string[]})=>{favoritesRef.current=result.traditionIds;setFavorites(result.traditionIds);queryClient.setQueryData(favoritesQueryKey(userId),result);try{localStorage.setItem(`${storageFav}:${userId}`,JSON.stringify(result.traditionIds))}catch{}};const onError=()=>{favoritesRef.current=previous;setFavorites(previous);setReport('That save did not sync. Check your connection and try again.')};if(saved)addFavorites.mutate({data:{traditionIds:[id]}},{onSuccess,onError});else removeFavorite.mutate({traditionId:id},{onSuccess,onError});};
  const surprise=()=>{const pool=filtered.length?filtered:entries;if(pool.length)choose(pool[Math.floor(Math.random()*pool.length)].id);};
  const importData=async(file?:File)=>{if(!file)return;try{const {entries:imported,errors}=importFile(await file.text(),file.name);const byId=new Map(userEntries.map(d=>[d.id,d]));let added=0,updated=0;imported.forEach(d=>{if(entries.some(e=>e.id===d.id))updated++;else added++;byId.set(d.id,d)});const next=[...byId.values()],total=mergeById(builtins,shipped,next).length;setUserEntries(next);setSelected('');setRegion('All');setStatus('');setSavedOnly(false);setQuery('');setCenter({lo:10,la:25});setZoom(1);setExplore(null);try{localStorage.setItem(storageUser,JSON.stringify(next));setReport(`Imported ${imported.length} from ${file.name}: ${added} new, ${updated} updated. Collection now has ${total}.${errors.length?' '+errors.slice(0,5).join(' · '):''}`)}catch{setReport(`Imported ${imported.length} traditions (collection now ${total}), but this browser could not save them for next time.`)}}catch(err){setReport((err as Error).message)}};
  const reset=()=>{setUserEntries([]);setSelected('');setCenter({lo:10,la:25});setZoom(1);setRegion('All');setStatus('');setSavedOnly(false);setQuery('');setReport('Your imported data was cleared.');try{localStorage.removeItem(storageUser);localStorage.removeItem(storageData)}catch{}};
  const filteredSrc=active?.src?.filter(s=>/^https?:\/\//i.test(s))||[];
  const selectedIsSaved=Boolean(active&&favorites.includes(active.id));
  return <main className="groft-shell">
-   <header className="topbar">
+    <header className="topbar">
     <div className="brand-lockup"><button type="button" className="brand-home" onClick={goHome} aria-label="GROFT — back to home" title="Back to home" data-testid="button-home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}brand/groft-logo.webp`} alt="GROFT logo"/></button><span className="brand-rule"></span><img className="brand-tagline" src={`${import.meta.env.BASE_URL}brand/groft-tagline.webp`} alt="A global repository of folkloric traditions"/></div>
+     <AuthControls/>
   </header>
   
    <section className="view-heading" aria-label="Choose a view"><div className="view-tabs" role="tablist" aria-label="Views">{(['globe','index','saved'] as const).map(k=><button key={k} type="button" role="tab" id={`tab-${k}`} aria-label={k==='globe'?'Globe':k==='index'?'Index':'Saved traditions'} title={k==='globe'?'Globe':k==='index'?'Index':'Saved traditions'} aria-selected={tab===k} className={`view-tab ${tab===k?'active':''}`} data-testid={`tab-${k}`} onClick={()=>{setTab(k);if(k==='saved')setSavedOnly(true);else setSavedOnly(false)}}><img className="view-tab-art" src={`${import.meta.env.BASE_URL}brand/view-${k}.webp`} alt=""/></button>)}</div></section>
@@ -274,7 +306,7 @@ function Home(){
    {active&&<div className="note-overlay" onClick={e=>{if(e.target===e.currentTarget)setSelected('')}}>
    <article className="detail-panel note-modal" role="dialog" aria-modal="true" aria-label="Field note" aria-live="polite" data-testid="detail-tradition"><button type="button" className="note-close" aria-label="Close field note" data-testid="button-close-note" onClick={()=>setSelected('')}><X size={22}/></button>
     {active?<>
-     <div className="detail-topline"><span className="section-index">FIELD NOTE / {active.r.toUpperCase()}</span><button type="button" className={`save-button ${selectedIsSaved?'is-saved':''}`} onClick={()=>toggleFavorite(active.id)} aria-label={selectedIsSaved?'Remove saved tradition':'Save tradition'} aria-pressed={selectedIsSaved} data-testid={`button-save-${active.id}`}><Heart size={17} fill={selectedIsSaved?'currentColor':'none'}/>{selectedIsSaved?'Saved':'Save'}</button></div>
+     <div className="detail-topline"><span className="section-index">FIELD NOTE / {active.r.toUpperCase()}</span><button type="button" className={`save-button ${selectedIsSaved?'is-saved':''}`} onClick={()=>toggleFavorite(active.id)} disabled={!isLoaded||(Boolean(userId)&&(!favoriteQuery.data||favoriteQuery.isLoading))||addFavorites.isPending||removeFavorite.isPending} aria-label={selectedIsSaved?'Remove saved tradition':'Save tradition'} aria-pressed={selectedIsSaved} data-testid={`button-save-${active.id}`}><Heart size={17} fill={selectedIsSaved?'currentColor':'none'}/>{selectedIsSaved?'Saved':'Save'}</button></div>
      
      <h2 className="detail-title" data-testid={`text-name-${active.id}`}>{active.n}</h2><div className="detail-place"><Compass size={14}/>{active.p}<span className="coord">{Math.abs(active.la).toFixed(1)}° {active.la>=0?'N':'S'} / {Math.abs(active.lo).toFixed(1)}° {active.lo>=0?'E':'W'}</span></div>
      <div className="detail-visual" data-slot="video" data-testid="asset-video">
@@ -308,7 +340,34 @@ function Home(){
 
  </main>;
 }
-function Router(){return <RoutedErrorBoundary><Switch><Route path="/" component={Home}/><Route component={NotFound}/></Switch></RoutedErrorBoundary>}
+const clerkAppearance={
+ theme:shadcn,
+ cssLayerName:"clerk",
+ options:{logoPlacement:"inside" as const,logoLinkUrl:basePath||"/",logoImageUrl:`${window.location.origin}${basePath}/brand/groft-logo.webp`},
+ variables:{colorPrimary:"#168c52",colorForeground:"#173128",colorMutedForeground:"#5d7068",colorBackground:"#f5f9fa",colorInput:"#ffffff",colorInputForeground:"#173128",colorDanger:"#b42318",colorNeutral:"#263b31",fontFamily:"'Bricolage Grotesque', sans-serif",borderRadius:"1rem"},
+ elements:{cardBox:{backgroundColor:"#f5f9fa",borderRadius:"20px",width:"min(440px, calc(100vw - 32px))",boxShadow:"0 24px 70px rgba(20,45,36,.16)"},card:{backgroundColor:"transparent",boxShadow:"none",border:"none"},footer:{backgroundColor:"transparent",border:"none"},headerTitle:{color:"#173128",fontWeight:"700"},headerSubtitle:{color:"#5d7068"},formFieldLabel:{color:"#173128"},formFieldInput:{color:"#173128",backgroundColor:"#fff",borderRadius:"9px"},formButtonPrimary:{backgroundColor:"#168c52",color:"#fff"},footerActionText:{color:"#5d7068"},footerActionLink:{color:"#168c52"},socialButtonsBlockButtonText:{color:"#173128"},dividerText:{color:"#5d7068"}}
+};
+function AuthControls(){
+ const {isLoaded,isSignedIn}=useAuth(),{user}=useUser(),{signOut}=useClerk();const[,setLocation]=useLocation();
+ if(!isLoaded)return <div className="account-actions" aria-label="Loading account"/>
+ if(!isSignedIn)return <div className="account-actions"><button type="button" onClick={()=>setLocation("/sign-in")} data-testid="button-sign-in">Sign in</button><button type="button" className="account-primary" onClick={()=>setLocation("/sign-up")} data-testid="button-sign-up">Create account</button></div>;
+ return <div className="account-actions"><span className="account-identity">{user?.firstName||user?.emailAddresses[0]?.emailAddress||"Signed in"}</span><button type="button" onClick={()=>void signOut({redirectUrl:basePath||"/"})} data-testid="button-sign-out">Sign out</button></div>;
+}
+function ClerkQueryClientCacheInvalidator(){
+ const {addListener}=useClerk(),client=useQueryClient(),previousUser=useRef<string|null|undefined>(undefined);
+ useEffect(()=>addListener(({user})=>{const id=user?.id??null;if(previousUser.current!==undefined&&previousUser.current!==id)client.clear();previousUser.current=id}),[addListener,client]);
+ return null;
+}
+function SignInPage(){return <div className="auth-screen"><SignIn routing="path" path={`${basePath}/sign-in`} signUpUrl={`${basePath}/sign-up`}/></div>}
+function SignUpPage(){return <div className="auth-screen"><SignUp routing="path" path={`${basePath}/sign-up`} signInUrl={`${basePath}/sign-in`}/></div>}
+function HomeRedirect(){return <><Show when="signed-in"><Redirect to="/user-portal"/></Show><Show when="signed-out"><Home/></Show></>}
+function UserPortal(){return <><Show when="signed-in"><Home/></Show><Show when="signed-out"><Redirect to="/"/></Show></>}
+function Router(){return <RoutedErrorBoundary><Switch><Route path="/" component={HomeRedirect}/><Route path="/user-portal" component={UserPortal}/><Route path="/sign-in/*?" component={SignInPage}/><Route path="/sign-up/*?" component={SignUpPage}/><Route component={NotFound}/></Switch></RoutedErrorBoundary>}
 function RoutedErrorBoundary({children}:{children:ReactNode}){const [location]=useLocation();return <ErrorBoundary resetKey={location}>{children}</ErrorBoundary>}
-function App(){return <TooltipProvider><WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/,'')}><Router/></WouterRouter><Toaster/></TooltipProvider>}
+function ClerkApp(){
+ const[,setLocation]=useLocation();
+ const stripBase=(path:string)=>basePath&&path.startsWith(basePath)?path.slice(basePath.length)||"/":path;
+ return <ClerkProvider publishableKey={clerkPubKey} proxyUrl={clerkProxyUrl} appearance={clerkAppearance} signInUrl={`${basePath}/sign-in`} signUpUrl={`${basePath}/sign-up`} localization={{signIn:{start:{title:"Welcome back",subtitle:"Sign in to return to GROFT"}},signUp:{start:{title:"Join GROFT",subtitle:"Save the traditions you want to revisit"}}}} routerPush={to=>setLocation(stripBase(to))} routerReplace={to=>setLocation(stripBase(to),{replace:true})}><QueryClientProvider client={queryClient}><ClerkQueryClientCacheInvalidator/><TooltipProvider><Router/><Toaster/></TooltipProvider></QueryClientProvider></ClerkProvider>;
+}
+function App(){return <WouterRouter base={basePath}><ClerkApp/></WouterRouter>}
 export default App;
