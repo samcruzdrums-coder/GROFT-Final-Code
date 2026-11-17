@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 
-/** A persistent scrollbar, independent of the operating system's overlay settings. */
+/** Show a scrollbar only when content overflows, independent of OS overlay settings. */
 export function TraditionScrollArea({ children, label }: { children: ReactNode; label: string }) {
   return (
-    <ScrollArea.Root type="always" className="tradition-scroll-area" data-testid="list-traditions">
+    <ScrollArea.Root type="auto" className="tradition-scroll-area" data-testid="list-traditions">
       <ScrollArea.Viewport
         className="tradition-scroll-viewport"
         tabIndex={0}
