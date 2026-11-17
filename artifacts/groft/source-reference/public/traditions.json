@@ -1,0 +1,1580 @@
+[
+  {
+    "id": "fado",
+    "n": "Fado",
+    "p": "Lisbon and Coimbra, Portugal",
+    "r": "Europe",
+    "la": 38.7,
+    "lo": -9.1,
+    "i": [
+      "Portuguese guitar",
+      "Classical guitar",
+      "Voice"
+    ],
+    "f": [
+      "Fado de Lisboa",
+      "Fado de Coimbra"
+    ],
+    "b": "Sung narratives of longing and fate, known as saudade, accompanied by the pear-shaped Portuguese guitar and a classical guitar.",
+    "l": "The bright, ringing Portuguese guitar answering the singer between verses.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "sardinia-tenore",
+    "n": "Sardinian cantu a tenore",
+    "p": "Barbagia, Sardinia, Italy",
+    "r": "Europe",
+    "la": 40.1,
+    "lo": 9.2,
+    "i": [
+      "Four male voices"
+    ],
+    "f": [
+      "Cantu a tenore",
+      "Ballu tundu"
+    ],
+    "b": "Four-voice a cappella singing in which a solo voice is answered by three others that produce a deep, buzzing chord. Recognized by UNESCO as intangible heritage.",
+    "l": "The low, droning bass voices locking in under the soloist.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "bulgaria",
+    "n": "Bulgarian village song and dance",
+    "p": "Rhodopes and Thrace, Bulgaria",
+    "r": "Europe",
+    "la": 42.7,
+    "lo": 25.5,
+    "i": [
+      "Gadulka",
+      "Gaida",
+      "Kaval",
+      "Tapan"
+    ],
+    "f": [
+      "Horo",
+      "Ruchenitsa",
+      "Women's vocal song"
+    ],
+    "b": "Dance and song built on uneven meters such as 5/8, 7/8 and 11/8, played at weddings and village gatherings.",
+    "l": "Uneven beat groupings, such as 2+2+3, that the dancers follow step by step.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "scotland-piping",
+    "n": "Scottish Highland piping",
+    "p": "Scottish Highlands, UK",
+    "r": "Europe",
+    "la": 57,
+    "lo": -4.5,
+    "i": [
+      "Great Highland bagpipe",
+      "Snare drum",
+      "Fiddle"
+    ],
+    "f": [
+      "Piobaireachd",
+      "March",
+      "Strathspey",
+      "Reel"
+    ],
+    "b": "Piobaireachd, the classical music of the Highland bagpipe, presents a ground theme followed by increasingly ornate variations. Pipers also play marches, strathspeys and reels.",
+    "l": "The steady drone beneath a melody that never changes volume.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "balkan-brass",
+    "n": "Balkan brass bands",
+    "p": "Serbia and the central Balkans",
+    "r": "Europe",
+    "la": 44,
+    "lo": 20.8,
+    "i": [
+      "Trumpet",
+      "Tenor horn",
+      "Tuba",
+      "Bass drum"
+    ],
+    "f": [
+      "Kolo",
+      "Wedding dance",
+      "Marching tune"
+    ],
+    "b": "Brass bands play fast, syncopated dance music at weddings, festivals and competitions across Serbia and neighboring regions.",
+    "l": "Rapid trumpet runs over the oom-pah bass of the tuba.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "sami-joik",
+    "n": "Sámi joik",
+    "p": "Sápmi, northern Scandinavia",
+    "r": "Europe",
+    "la": 68.5,
+    "lo": 23.5,
+    "i": [
+      "Voice"
+    ],
+    "f": [
+      "Joik"
+    ],
+    "b": "A sung portrait of a person, an animal or a place, often with few or no words, that belongs to the Sámi peoples of northern Norway, Sweden, Finland and Russia.",
+    "l": "Short, repeating melodic phrases that seem to circle rather than resolve.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "gnawa",
+    "n": "Gnawa music",
+    "p": "Essaouira and Marrakech, Morocco",
+    "r": "Africa",
+    "la": 31.5,
+    "lo": -9.8,
+    "i": [
+      "Guembri",
+      "Qraqeb",
+      "Voice"
+    ],
+    "f": [
+      "Lila ceremony",
+      "Ceremonial song"
+    ],
+    "b": "Spiritual and healing music of the Gnawa brotherhoods, built on repeating bass lines of the three-stringed guembri and iron castanets.",
+    "l": "The guembri's looping bass riff under call-and-response singing.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "ethiopia-azmari",
+    "n": "Ethiopian azmari music",
+    "p": "Highland Ethiopia",
+    "r": "Africa",
+    "la": 9,
+    "lo": 38.7,
+    "i": [
+      "Masenqo",
+      "Krar",
+      "Voice"
+    ],
+    "f": [
+      "Azmari song",
+      "Tizita"
+    ],
+    "b": "Azmaris are traveling singer-poets who improvise witty verse to the masenqo, a one-string bowed lute, using pentatonic modes called qenet.",
+    "l": "Improvised verse that teases or praises people in the room.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "zulu-isicathamiya",
+    "n": "Zulu isicathamiya and maskandi",
+    "p": "KwaZulu-Natal, South Africa",
+    "r": "Africa",
+    "la": -28.5,
+    "lo": 31,
+    "i": [
+      "Male choir",
+      "Guitar",
+      "Concertina"
+    ],
+    "f": [
+      "Isicathamiya",
+      "Maskandi"
+    ],
+    "b": "Isicathamiya is soft-stepping a cappella choral singing that grew among Zulu migrant workers. Maskandi is a guitar- and concertina-based style of rural storytelling.",
+    "l": "Deep bass voices anchoring close harmony while the leader calls above.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "shona-mbira",
+    "n": "Shona mbira music",
+    "p": "Zimbabwe",
+    "r": "Africa",
+    "la": -19,
+    "lo": 31,
+    "i": [
+      "Mbira dzavadzimu",
+      "Hosho shakers"
+    ],
+    "f": [
+      "Bira ceremony song"
+    ],
+    "b": "Interlocking mbira patterns accompany all-night ceremonies in which Shona communities call on ancestral spirits.",
+    "l": "Two mbira parts interlocking so the pulse seems to shift.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "tuareg",
+    "n": "Tuareg music",
+    "p": "Sahara: Mali, Niger and Algeria",
+    "r": "Africa",
+    "la": 19,
+    "lo": 5,
+    "i": [
+      "Imzad",
+      "Tende drum",
+      "Electric guitar"
+    ],
+    "f": [
+      "Tende song",
+      "Assouf"
+    ],
+    "b": "Women play the one-string imzad fiddle and the tende mortar drum. In the late twentieth century Tuareg guitarists developed a hypnotic, repeating guitar style.",
+    "l": "Repeating guitar riffs over a steady, rolling rhythm.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "cape-verde",
+    "n": "Cape Verdean morna",
+    "p": "Cape Verde",
+    "r": "Africa",
+    "la": 16,
+    "lo": -24,
+    "i": [
+      "Cavaquinho",
+      "Guitar",
+      "Violin",
+      "Voice"
+    ],
+    "f": [
+      "Morna",
+      "Coladeira",
+      "Funaná"
+    ],
+    "b": "Morna is a slow, wistful song form of the islands, often about longing and departure. Coladeira and funaná are livelier dance forms.",
+    "l": "Cavaquinho strumming gently under a wistful sung line.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "burundi-drums",
+    "n": "Burundian ceremonial drumming",
+    "p": "Burundi",
+    "r": "Africa",
+    "la": -3.4,
+    "lo": 29.9,
+    "i": [
+      "Ingoma drums"
+    ],
+    "f": [
+      "Ceremonial drumming"
+    ],
+    "b": "Ensembles of large drums play ceremonial rhythms historically tied to the royal court. The tradition is recognized by UNESCO.",
+    "l": "Many drummers entering one after another to build a single dense rhythm.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "baul",
+    "n": "Baul songs",
+    "p": "Bengal, India and Bangladesh",
+    "r": "Asia",
+    "la": 23.5,
+    "lo": 88.5,
+    "i": [
+      "Ektara",
+      "Dotara",
+      "Khamak"
+    ],
+    "f": [
+      "Baul song"
+    ],
+    "b": "Wandering Baul singers perform songs of mystical devotion and spiritual questioning in Bengali, accompanied by small plucked and drum instruments.",
+    "l": "The plucked drone of the ektara beneath a free vocal line.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "pansori",
+    "n": "Korean pansori",
+    "p": "Jeolla region, South Korea",
+    "r": "Asia",
+    "la": 35.5,
+    "lo": 127,
+    "i": [
+      "Voice",
+      "Buk drum"
+    ],
+    "f": [
+      "Pansori",
+      "Minyo"
+    ],
+    "b": "A single singer, accompanied by a drummer on the buk, tells long stories through song, speech and gesture.",
+    "l": "The drummer's shouted encouragements answering the singer.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "uyghur-muqam",
+    "n": "Uyghur muqam",
+    "p": "Tarim Basin, Xinjiang, China",
+    "r": "Asia",
+    "la": 39.5,
+    "lo": 76,
+    "i": [
+      "Rawap",
+      "Dutar",
+      "Tambur",
+      "Satar"
+    ],
+    "f": [
+      "Twelve Muqam",
+      "Dastan"
+    ],
+    "b": "Suites of song, dance and instrumental pieces performed in the oasis towns of the Tarim Basin. The Twelve Muqam are recognized by UNESCO.",
+    "l": "Slow, free-time openings that accelerate into dance sections.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "quan-ho",
+    "n": "Quan họ",
+    "p": "Bắc Ninh, Vietnam",
+    "r": "Asia",
+    "la": 21.2,
+    "lo": 106.1,
+    "i": [
+      "Voice (usually unaccompanied)"
+    ],
+    "f": [
+      "Quan họ"
+    ],
+    "b": "Antiphonal singing in which groups of women and men trade songs of courtship and friendship, traditionally in villages around Bắc Ninh.",
+    "l": "Two groups answering each other, with long ornamented vowels.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "kulintang",
+    "n": "Kulintang ensembles",
+    "p": "Mindanao, Philippines",
+    "r": "Asia",
+    "la": 7.2,
+    "lo": 124.3,
+    "i": [
+      "Kulintang",
+      "Agung",
+      "Dabakan",
+      "Gandingan"
+    ],
+    "f": [
+      "Kulintang ensemble music"
+    ],
+    "b": "Ensembles built around a row of small gongs laid horizontally, accompanied by large hanging gongs and drums at ceremonies and gatherings.",
+    "l": "A fast, ornamented gong melody over deep gong strokes.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "kazakh-dombra",
+    "n": "Kazakh kuy and dombra",
+    "p": "Kazakhstan",
+    "r": "Asia",
+    "la": 48,
+    "lo": 67,
+    "i": [
+      "Dombra"
+    ],
+    "f": [
+      "Kuy",
+      "Aitys"
+    ],
+    "b": "Kuy are instrumental pieces on the two-string dombra that often tell a story or evoke nature. Aitys is a contest of improvised verse.",
+    "l": "Rapid strumming that can imitate hoofbeats.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "mor-lam",
+    "n": "Mor lam",
+    "p": "Isan, Thailand and Laos",
+    "r": "Asia",
+    "la": 16.5,
+    "lo": 102.8,
+    "i": [
+      "Khaen",
+      "Phin",
+      "Voice"
+    ],
+    "f": [
+      "Mor lam"
+    ],
+    "b": "Sung storytelling and courtship verse from northeast Thailand and Laos, accompanied by the khaen, a bamboo mouth organ.",
+    "l": "The khaen's breathy chords under a fast-talking vocal.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "qawwali",
+    "n": "Qawwali",
+    "p": "Punjab and Sindh, Pakistan and India",
+    "r": "Asia",
+    "la": 31.5,
+    "lo": 74.3,
+    "i": [
+      "Harmonium",
+      "Tabla",
+      "Dholak",
+      "Hand claps"
+    ],
+    "f": [
+      "Qawwali"
+    ],
+    "b": "Devotional Sufi music in which a lead singer and chorus build from slow verses to ecstatic climaxes, driven by hand claps.",
+    "l": "The chorus's hand claps tightening as the song builds.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "kurdish-dengbej",
+    "n": "Kurdish dengbêj tradition",
+    "p": "Kurdish regions of Turkey, Iraq, Iran and Syria",
+    "r": "Middle East",
+    "la": 37.5,
+    "lo": 42.5,
+    "i": [
+      "Voice"
+    ],
+    "f": [
+      "Epic song",
+      "Lament",
+      "Love song"
+    ],
+    "b": "Dengbêj are Kurdish bards who perform historical epics, laments and love stories from memory, often unaccompanied.",
+    "l": "A single voice carrying a long story with few pauses.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "turkish-asik",
+    "n": "Aşık bardic tradition",
+    "p": "Anatolia, Turkey",
+    "r": "Middle East",
+    "la": 39,
+    "lo": 35,
+    "i": [
+      "Bağlama (saz)",
+      "Voice"
+    ],
+    "f": [
+      "Aşık song",
+      "Türkü",
+      "Deyiş"
+    ],
+    "b": "Aşıks are traveling bards who sing poetry to the bağlama, a long-necked lute, and compete in improvised verse.",
+    "l": "The bağlama's quick plucked figures between sung verses.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "gulf-fijiri",
+    "n": "Fijiri pearl-diving songs",
+    "p": "Bahrain and the Arabian Gulf",
+    "r": "Middle East",
+    "la": 26,
+    "lo": 50.5,
+    "i": [
+      "Mirwas drum",
+      "Jahla clay jar",
+      "Hand clapping"
+    ],
+    "f": [
+      "Fijiri"
+    ],
+    "b": "A chanted song form once performed by pearl divers and their crews, led by a singer and a chorus with drum, clay jar and clapping.",
+    "l": "The chorus answering the lead singer over layered hand claps.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "son-jarocho",
+    "n": "Son jarocho",
+    "p": "Veracruz, Mexico",
+    "r": "Americas",
+    "la": 18.9,
+    "lo": -96.2,
+    "i": [
+      "Jarana jarocha",
+      "Requinto jarocho",
+      "Harp",
+      "Tarima"
+    ],
+    "f": [
+      "Son jarocho",
+      "Fandango",
+      "Zapateado"
+    ],
+    "b": "Rooted in the fandango, a communal gathering where musicians trade verses and dancers stamp rhythms on a wooden platform called the tarima.",
+    "l": "Strummed jarana rhythms with improvised verse and stamping feet.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "cumbia",
+    "n": "Cumbia",
+    "p": "Caribbean coast, Colombia",
+    "r": "Americas",
+    "la": 10.4,
+    "lo": -75.5,
+    "i": [
+      "Gaita flutes",
+      "Tambora",
+      "Llamador",
+      "Maracas"
+    ],
+    "f": [
+      "Cumbia"
+    ],
+    "b": "Cumbia emerged on Colombia's Caribbean coast from Indigenous, African and Spanish traditions. Its traditional form uses gaita flutes and drums.",
+    "l": "Gaita flutes answering the drums' rolling pulse.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "samba-de-roda",
+    "n": "Samba de roda",
+    "p": "Recôncavo, Bahia, Brazil",
+    "r": "Americas",
+    "la": -12.9,
+    "lo": -38.5,
+    "i": [
+      "Viola machete",
+      "Pandeiro",
+      "Atabaque",
+      "Prato e faca"
+    ],
+    "f": [
+      "Samba de roda",
+      "Dance circle"
+    ],
+    "b": "A circle dance in which singers and instrumentalists trade verses and individual dancers step into the center. Recognized by UNESCO.",
+    "l": "Call-and-response singing with a dancer in the middle of the circle.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "cuban-son",
+    "n": "Cuban son",
+    "p": "Oriente, Cuba",
+    "r": "Americas",
+    "la": 20,
+    "lo": -75.8,
+    "i": [
+      "Tres",
+      "Guitar",
+      "Bongo",
+      "Maracas",
+      "Claves"
+    ],
+    "f": [
+      "Son",
+      "Son montuno"
+    ],
+    "b": "Cuban son joins Spanish-derived guitar and sung verse with African-derived percussion. The tres is a small guitar with three pairs of strings.",
+    "l": "The clave pattern, in two-three or three-two, organizing everything else.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "inuit-katajjaq",
+    "n": "Inuit throat singing",
+    "p": "Nunavik and Nunavut, Canada",
+    "r": "Americas",
+    "la": 62,
+    "lo": -75,
+    "i": [
+      "Voice"
+    ],
+    "f": [
+      "Katajjaq"
+    ],
+    "b": "A vocal game in which two people stand facing each other and trade short rhythmic breaths and sounds. The first to run out of breath or laugh loses.",
+    "l": "The two voices interlocking in a fast, breathy pulse.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "cajun-zydeco",
+    "n": "Cajun and zydeco music",
+    "p": "Louisiana, USA",
+    "r": "Americas",
+    "la": 30.2,
+    "lo": -92,
+    "i": [
+      "Fiddle",
+      "Accordion",
+      "Rubboard",
+      "Triangle"
+    ],
+    "f": [
+      "Waltz",
+      "Two-step",
+      "Zydeco"
+    ],
+    "b": "Cajun music comes from French-speaking Acadian descendants and centers on fiddle and diatonic accordion. Zydeco, from Creole communities, adds the rubboard and blues influences.",
+    "l": "The accordion's driving melody over a rubboard's scraping rhythm.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "yolngu-manikay",
+    "n": "Yolŋu manikay",
+    "p": "Arnhem Land, Australia",
+    "r": "Oceania",
+    "la": -12.5,
+    "lo": 134,
+    "i": [
+      "Yidaki",
+      "Bilma clapsticks",
+      "Voice"
+    ],
+    "f": [
+      "Manikay song cycle"
+    ],
+    "b": "Yolŋu singers perform manikay, song cycles tied to clan land and ancestors, accompanied by clapsticks and the yidaki.",
+    "l": "The clapsticks' steady pulse under the yidaki's drone.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "maori-waiata",
+    "n": "Māori waiata and haka",
+    "p": "Aotearoa New Zealand",
+    "r": "Oceania",
+    "la": -38,
+    "lo": 176,
+    "i": [
+      "Voice",
+      "Koauau flute",
+      "Pūtātara shell trumpet"
+    ],
+    "f": [
+      "Waiata",
+      "Haka"
+    ],
+    "b": "Waiata are Māori songs for many occasions. Haka are forceful chanted performances with synchronized gestures.",
+    "l": "The whole group striking the beat in unison.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "tonga-lakalaka",
+    "n": "Tongan lakalaka",
+    "p": "Tonga",
+    "r": "Oceania",
+    "la": -21.2,
+    "lo": -175.2,
+    "i": [
+      "Mass chorus"
+    ],
+    "f": [
+      "Lakalaka"
+    ],
+    "b": "A choral dance performed by large groups in which orators set poetry to unison movements. Recognized by UNESCO.",
+    "l": "Hundreds of voices and gestures moving together in unison.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "fiji-meke",
+    "n": "Fijian meke",
+    "p": "Fiji",
+    "r": "Oceania",
+    "la": -17.8,
+    "lo": 178,
+    "i": [
+      "Lali log drum",
+      "Voice"
+    ],
+    "f": [
+      "Meke"
+    ],
+    "b": "Meke joins chant, dance and story, performed with a lali log drum, to commemorate history and events.",
+    "l": "The lali's resonant beat marking each phrase of the chant.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "salsa",
+    "n": "Salsa",
+    "p": "New York City, with Cuban and Puerto Rican roots",
+    "r": "Americas",
+    "la": 40.8,
+    "lo": -73.9,
+    "i": [
+      "Congas",
+      "Timbales",
+      "Bongo",
+      "Piano",
+      "Trumpet",
+      "Trombone",
+      "Bass"
+    ],
+    "f": [
+      "Salsa",
+      "Descarga"
+    ],
+    "b": "Salsa took shape in the 1960s and 1970s among Caribbean Latino communities in New York, blending Cuban son and other Caribbean forms with jazz-influenced horns and piano.",
+    "l": "The piano's repeating montuno pattern locked to the clave.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "cuban-rumba",
+    "n": "Cuban rumba",
+    "p": "Havana and Matanzas, Cuba",
+    "r": "Americas",
+    "la": 23,
+    "lo": -81.9,
+    "i": [
+      "Conga drums",
+      "Claves",
+      "Palitos (sticks on wood)",
+      "Voice"
+    ],
+    "f": [
+      "Yambú",
+      "Guaguancó",
+      "Columbia"
+    ],
+    "b": "Secular music and dance of Afro-Cuban communities in Havana and Matanzas, played on conga drums, claves and wooden sticks. Its three main styles are yambú, guaguancó and columbia. Recognized by UNESCO.",
+    "l": "The quinto drum improvising against the steady lower drums.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "guaguanco",
+    "n": "Guaguancó",
+    "p": "Havana and Matanzas, Cuba",
+    "r": "Americas",
+    "la": 23.1,
+    "lo": -82.4,
+    "i": [
+      "Conga drums (tumba, segundo, quinto)",
+      "Claves",
+      "Voice"
+    ],
+    "f": [
+      "Guaguancó"
+    ],
+    "b": "A mid-tempo style of rumba and a courtship dance for a couple, in which the man tries to catch the woman off guard with a sudden gesture called the vacunao and she deflects it.",
+    "l": "The soloist's opening song, then the chorus answering with a short refrain.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "bomba",
+    "n": "Bomba",
+    "p": "Loíza, Santurce and Ponce, Puerto Rico",
+    "r": "Americas",
+    "la": 18.3,
+    "lo": -66.2,
+    "i": [
+      "Barriles (barrel drums)",
+      "Cuá (sticks)",
+      "Maracas",
+      "Voice"
+    ],
+    "f": [
+      "Sicá",
+      "Yubá",
+      "Holandés",
+      "Leró"
+    ],
+    "b": "An Afro-Puerto Rican drum and dance tradition in which a dancer challenges the lead drummer, who must answer each move with a drum phrase.",
+    "l": "The lead drum answering each step the dancer makes.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "plena",
+    "n": "Plena",
+    "p": "Ponce, Puerto Rico",
+    "r": "Americas",
+    "la": 18,
+    "lo": -66.6,
+    "i": [
+      "Panderos (hand frame drums)",
+      "Güiro",
+      "Accordion",
+      "Guitar"
+    ],
+    "f": [
+      "Plena"
+    ],
+    "b": "A Puerto Rican song form from the Ponce area, often called the sung newspaper for its topical lyrics, carried by hand-held frame drums called panderos.",
+    "l": "Three panderos of different sizes layering into one rhythm.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "jibaro",
+    "n": "Puerto Rican jíbaro music",
+    "p": "Highlands of Puerto Rico",
+    "r": "Americas",
+    "la": 18.2,
+    "lo": -66.6,
+    "i": [
+      "Cuatro",
+      "Guitar",
+      "Güiro",
+      "Voice"
+    ],
+    "f": [
+      "Seis",
+      "Aguinaldo",
+      "Décima"
+    ],
+    "b": "Rural music of Puerto Rico's highlands, built around the cuatro, a ten-string guitar-like instrument, and the sung décima, a ten-line verse form often improvised.",
+    "l": "The cuatro's quick, bright figures answering the singer.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "merengue",
+    "n": "Merengue",
+    "p": "Dominican Republic",
+    "r": "Americas",
+    "la": 19.5,
+    "lo": -70.7,
+    "i": [
+      "Accordion",
+      "Tambora",
+      "Güira",
+      "Saxophone",
+      "Bass"
+    ],
+    "f": [
+      "Merengue típico",
+      "Merengue de orquesta"
+    ],
+    "b": "National dance music of the Dominican Republic, with a fast two-beat pulse traditionally played by accordion, two-headed tambora drum and the metal scraper called the güira. Recognized by UNESCO.",
+    "l": "The tambora's rolling pattern with the güira scraping steadily on top.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "bachata",
+    "n": "Bachata",
+    "p": "Dominican Republic",
+    "r": "Americas",
+    "la": 18.9,
+    "lo": -70.4,
+    "i": [
+      "Requinto guitar",
+      "Rhythm guitar",
+      "Bongo",
+      "Güira",
+      "Bass"
+    ],
+    "f": [
+      "Bachata",
+      "Bolero-bachata"
+    ],
+    "b": "Guitar-driven music of love and heartbreak that emerged in poor rural and urban Dominican neighborhoods in the mid-twentieth century, drawing on bolero and son. Recognized by UNESCO.",
+    "l": "A bright, ornamented requinto line trading with the rhythm guitar.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "dominican-palo",
+    "n": "Dominican palo",
+    "p": "Villa Mella, Dominican Republic",
+    "r": "Americas",
+    "la": 18.6,
+    "lo": -69.9,
+    "i": [
+      "Palos (long drums)",
+      "Maracas",
+      "Voice"
+    ],
+    "f": [
+      "Palo",
+      "Brotherhood ritual song"
+    ],
+    "b": "Afro-Dominican brotherhood music centered on long drums called palos, played at religious rites and funerals. The Congos of Villa Mella are recognized by UNESCO.",
+    "l": "Several long drums joining one after another over the singing.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "haiti-rara",
+    "n": "Haitian rara",
+    "p": "Haiti",
+    "r": "Americas",
+    "la": 18.9,
+    "lo": -72.3,
+    "i": [
+      "Vaksin (bamboo trumpets)",
+      "Tin trumpets",
+      "Drums"
+    ],
+    "f": [
+      "Rara procession"
+    ],
+    "b": "Street processions of musicians, dancers and singers that parade through towns and countryside during the Lenten season, powered by bamboo and tin trumpets and drums.",
+    "l": "Single-note trumpets interlocking, each sounding one pitch of the tune.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "vodou-drumming",
+    "n": "Haitian Vodou drumming",
+    "p": "Haiti",
+    "r": "Americas",
+    "la": 18.5,
+    "lo": -72.3,
+    "i": [
+      "Rada drums",
+      "Ogan (iron bell)",
+      "Asson (rattle)",
+      "Voice"
+    ],
+    "f": [
+      "Rada",
+      "Petwo"
+    ],
+    "b": "Sacred drumming and song for Vodou ceremonies, in which sets of drums and an iron bell call and honor the spirits, known as lwa.",
+    "l": "The iron bell holding a steady pattern while the lead drum improvises.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "jamaican-mento",
+    "n": "Jamaican mento",
+    "p": "Rural Jamaica",
+    "r": "Americas",
+    "la": 18.1,
+    "lo": -77.3,
+    "i": [
+      "Banjo",
+      "Guitar",
+      "Hand drum",
+      "Rumba box"
+    ],
+    "f": [
+      "Mento"
+    ],
+    "b": "Jamaica's rural folk music of the early twentieth century, often called Jamaican calypso, played on banjo, guitar, hand drum and a large plucked thumb-piano bass called the rumba box.",
+    "l": "The rumba box's bouncing bass under the banjo.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "nyabinghi",
+    "n": "Nyabinghi drumming",
+    "p": "Jamaica",
+    "r": "Americas",
+    "la": 18,
+    "lo": -77.5,
+    "i": [
+      "Bass drum",
+      "Fundeh drum",
+      "Akete drum",
+      "Voice"
+    ],
+    "f": [
+      "Nyabinghi chant",
+      "Groundation"
+    ],
+    "b": "Rastafari ceremonial drumming and chanting, performed at gatherings called groundations, with bass, fundeh and akete hand drums.",
+    "l": "The deep bass drum pulse under the akete's lighter, busier patterns.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "calypso",
+    "n": "Calypso and soca",
+    "p": "Trinidad and Tobago",
+    "r": "Americas",
+    "la": 10.5,
+    "lo": -61.3,
+    "i": [
+      "Guitar",
+      "Cuatro",
+      "Brass",
+      "Voice"
+    ],
+    "f": [
+      "Calypso",
+      "Kaiso",
+      "Soca"
+    ],
+    "b": "Calypso, also called kaiso, is a Trinidadian song tradition of topical, witty and often satirical verse, historically performed in calypso tents during Carnival. Soca is a faster dance offshoot.",
+    "l": "Sharp, topical verses leading into a catchy chorus.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "steelpan",
+    "n": "Steelpan and steel bands",
+    "p": "Trinidad and Tobago",
+    "r": "Americas",
+    "la": 10.7,
+    "lo": -61.5,
+    "i": [
+      "Steelpans (tenor, double second, bass)",
+      "Percussion"
+    ],
+    "f": [
+      "Panorama competition",
+      "Carnival steel band"
+    ],
+    "b": "The steelpan is a pitched percussion instrument made from oil drums, developed in Trinidad and Tobago in the mid-twentieth century. Steel bands rehearse all year for Carnival's Panorama competition.",
+    "l": "Rolled notes on the tenor pans carrying the melody over the bass pans.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "garifuna",
+    "n": "Garifuna music",
+    "p": "Caribbean coast of Belize, Honduras and Guatemala",
+    "r": "Americas",
+    "la": 16,
+    "lo": -88.5,
+    "i": [
+      "Garawon drums",
+      "Maracas",
+      "Turtle shell",
+      "Voice"
+    ],
+    "f": [
+      "Punta",
+      "Paranda",
+      "Dügü ritual"
+    ],
+    "b": "Music of the Garifuna people, descended from West African and Indigenous Caribbean ancestors, built on call-and-response singing and paired drums. Recognized by UNESCO.",
+    "l": "Two drums trading patterns beneath the lead vocals.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "danzon",
+    "n": "Danzón",
+    "p": "Matanzas, Cuba",
+    "r": "Americas",
+    "la": 23,
+    "lo": -81.6,
+    "i": [
+      "Piano",
+      "Violin",
+      "Flute",
+      "Timbales",
+      "Güiro",
+      "Double bass"
+    ],
+    "f": [
+      "Danzón",
+      "Danzonete"
+    ],
+    "b": "A formal ballroom dance and music from Cuba that grew out of the contradanza in the late nineteenth century, later hugely popular in Mexico.",
+    "l": "A flute and violin melody over a gentle, steady rhythm that speeds up near the end.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "punto-guajiro",
+    "n": "Cuban punto guajiro",
+    "p": "Cuban countryside",
+    "r": "Americas",
+    "la": 22,
+    "lo": -79.5,
+    "i": [
+      "Laúd",
+      "Tres",
+      "Guitar",
+      "Güiro",
+      "Claves",
+      "Voice"
+    ],
+    "f": [
+      "Punto guajiro",
+      "Décima"
+    ],
+    "b": "Rural Cuban song tradition of ten-line décimas, often improvised, sung to the laúd, tres and guitar.",
+    "l": "A singer improvising verses over a steady plucked accompaniment.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "bata-drums",
+    "n": "Batá drumming",
+    "p": "Cuba",
+    "r": "Americas",
+    "la": 22.4,
+    "lo": -80.4,
+    "i": [
+      "Batá drums (iyá, itótele, okónkolo)",
+      "Voice"
+    ],
+    "f": [
+      "Toque de santo"
+    ],
+    "b": "Sacred drumming for Santería ceremonies on three double-headed, hourglass-shaped batá drums, whose rhythms are linked to particular orishas.",
+    "l": "Three drums of different sizes answering each other in tight patterns.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "santiago-conga",
+    "n": "Santiago de Cuba conga and carnival",
+    "p": "Santiago de Cuba, Cuba",
+    "r": "Americas",
+    "la": 20,
+    "lo": -75.8,
+    "i": [
+      "Conga drums",
+      "Corneta china (reed)",
+      "Bocú drums",
+      "Iron pans"
+    ],
+    "f": [
+      "Conga santiaguera",
+      "Comparsa"
+    ],
+    "b": "Carnival processions in Santiago de Cuba, where bands of drums, iron pans and the shrill reed instrument called the corneta china parade through the streets.",
+    "l": "The corneta china's piercing line over the driving drums.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "gwo-ka",
+    "n": "Gwo ka",
+    "p": "Guadeloupe",
+    "r": "Americas",
+    "la": 16.2,
+    "lo": -61.6,
+    "i": [
+      "Ka drums (boula, makè)",
+      "Ti bwa sticks",
+      "Chorus"
+    ],
+    "f": [
+      "Gwo ka",
+      "Lewoz"
+    ],
+    "b": "A drum and song tradition of Guadeloupe, descended from enslaved Africans, built on ka drums and call-and-response. Recognized by UNESCO.",
+    "l": "The lead makè drum improvising against the steady boula.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "barbados-tuk",
+    "n": "Barbadian tuk",
+    "p": "Barbados",
+    "r": "Americas",
+    "la": 13.2,
+    "lo": -59.5,
+    "i": [
+      "Kettle drum",
+      "Bass drum",
+      "Penny whistle",
+      "Steel triangle"
+    ],
+    "f": [
+      "Tuk"
+    ],
+    "b": "Festival music of Barbados played by small bands of kettle drum, bass drum, steel triangle and penny whistle, drawing on British military and African traditions.",
+    "l": "The penny whistle's lively tune over rolling kettle drum patterns.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "junkanoo",
+    "n": "Junkanoo",
+    "p": "The Bahamas",
+    "r": "Americas",
+    "la": 25,
+    "lo": -77.4,
+    "i": [
+      "Goombay drums",
+      "Cowbells",
+      "Whistles",
+      "Horns"
+    ],
+    "f": [
+      "Junkanoo parade"
+    ],
+    "b": "Street parades held at dawn on Boxing Day and New Year's Day, driven by goatskin drums, cowbells, whistles and horns.",
+    "l": "Cowbells and drums building into a driving, surging rush.",
+    "st": "draft",
+    "src": []
+  },
+  {
+    "id": "irish",
+    "n": "Irish traditional",
+    "p": "Ireland",
+    "r": "Europe",
+    "la": 53.3,
+    "lo": -8.0,
+    "i": [
+      "Fiddle",
+      "Uilleann pipes",
+      "Tin whistle",
+      "Bodhrán",
+      "Voice"
+    ],
+    "f": [
+      "Reels",
+      "Jigs",
+      "Airs",
+      " sean-nós song"
+    ],
+    "b": "Irish traditional music spans regional instrumental and vocal practices, shaped by dance, social music-making, and a deep repertory of songs and tunes.",
+    "l": "Listen for ornamented melody, flexible phrasing, and the rhythmic lift of reels and jigs.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/deirdre-ni-fhlionn/cuaichin-gleann-neifin-the-cuckoo-of-glen-neifin/celtic-world/music/track/smithsonian"
+    ]
+  },
+  {
+    "id": "rajasthan",
+    "n": "Manganiyar and Langa songs",
+    "p": "Rajasthan, India",
+    "r": "Asia",
+    "la": 26.9,
+    "lo": 73.0,
+    "i": [
+      "Kamaicha",
+      "Sindhi sarangi",
+      "Dholak",
+      "Khartal",
+      "Voice"
+    ],
+    "f": [
+      "Griot-style hereditary song",
+      "Devotional song",
+      "Narrative song"
+    ],
+    "b": "Manganiyar and Langa musicians of Rajasthan sustain hereditary performance traditions for community and patronage contexts, with distinctive bowed strings, percussion, and vocal repertories.",
+    "l": "Listen for the resonant bowed-string drone and intricate vocal ornamentation.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/karim-khan/shyam-kalyan/track/smithsonian"
+    ]
+  },
+  {
+    "id": "andes",
+    "n": "Andean highland music",
+    "p": "Peru, Bolivia and Ecuador",
+    "r": "Americas",
+    "la": -13.2,
+    "lo": -72.0,
+    "i": [
+      "Quena",
+      "Siku panpipes",
+      "Charango",
+      "Bombo drum",
+      "Voice"
+    ],
+    "f": [
+      "Huayno",
+      "Sikuri ensemble music",
+      "Carnival music"
+    ],
+    "b": "Andean highland music brings together Indigenous and mestizo practices across Peru, Bolivia, and Ecuador, often pairing panpipes and flutes with strings and dance rhythms.",
+    "l": "Listen for interlocking panpipe parts, bright charango figures, and a buoyant duple pulse.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/songs-and-dances-of-bolivia/latin-world/music/album/smithsonian"
+    ]
+  },
+  {
+    "id": "mande",
+    "n": "Mandé griot music",
+    "p": "Mali, Guinea and Gambia",
+    "r": "Africa",
+    "la": 12.0,
+    "lo": -8.0,
+    "i": [
+      "Kora",
+      "Balafon",
+      "Ngoni",
+      "Voice"
+    ],
+    "f": [
+      "Jali praise song",
+      "Epic narrative",
+      "Kora instrumental"
+    ],
+    "b": "Mandé jali (griot) musicians preserve histories, praise lineages, and perform an expansive repertory using the kora, balafon, and other regional instruments.",
+    "l": "Listen for the kora’s cascading ostinatos beneath a flexible melodic line.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/dembo-konte/sutukung-kumbu-sora-and-solo-tomora-ba-tuning/world/music/track/smithsonian"
+    ]
+  },
+  {
+    "id": "japan",
+    "n": "Min'yō",
+    "p": "Japan",
+    "r": "Asia",
+    "la": 36.2,
+    "lo": 138.3,
+    "i": [
+      "Voice",
+      "Shamisen",
+      "Shakuhachi",
+      "Taiko",
+      "Shinobue"
+    ],
+    "f": [
+      "Min’yō folk song",
+      "Work song",
+      "Festival song",
+      "Bon odori song"
+    ],
+    "b": "Japan’s min’yō encompasses regional folk songs associated with work, festivals, dance, and local identity, with instrumentation varying widely by region.",
+    "l": "Listen for regional vocal timbres, pentatonic turns, and the way percussion shapes dance songs.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/country/japan",
+      "https://folkways.si.edu/traditional-folk-songs-of-japan/world/music/album/smithsonian"
+    ]
+  },
+  {
+    "id": "flamenco",
+    "n": "Flamenco",
+    "p": "Andalusia, Spain",
+    "r": "Europe",
+    "la": 37.4,
+    "lo": -5.9,
+    "i": [
+      "Voice",
+      "Flamenco guitar",
+      "Palmas",
+      "Cajón"
+    ],
+    "f": [
+      "Cante jondo",
+      "Soleá",
+      "Bulerías",
+      "Fandangos"
+    ],
+    "b": "Flamenco is an expressive Andalusian art of song, guitar, and dance, shaped by Romani, Andalusian, and wider cultural histories. Its forms (palos) carry distinct rhythmic cycles and emotional characters.",
+    "l": "Listen for the compás, vocal melisma, handclaps, and the dialogue between singer and guitar.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/domenico-zullo-and-emilio-prados/two-flamenco-guitars/world/music/album/smithsonian"
+    ]
+  },
+  {
+    "id": "hungary",
+    "n": "Hungarian and Romani village music",
+    "p": "Hungary and Transylvania",
+    "r": "Europe",
+    "la": 47.2,
+    "lo": 19.5,
+    "i": [
+      "Violin",
+      "Viola",
+      "Double bass",
+      "Cimbalom",
+      "Voice"
+    ],
+    "f": [
+      "Csárdás",
+      "Verbunkos",
+      "Village dance music",
+      "Lament"
+    ],
+    "b": "Hungarian and Romani village music traditions include regional dance repertories and virtuoso ensemble styles, with interconnected histories across Hungary and Transylvania.",
+    "l": "Listen for ornamented violin lead, shifting dance tempos, and the rhythmic support of viola and bass.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/folk-music-of-hungary/world/music/album/smithsonian"
+    ]
+  },
+  {
+    "id": "maqam",
+    "n": "Maqam folk traditions",
+    "p": "The Levant and Arabian Peninsula",
+    "r": "Middle East",
+    "la": 31.8,
+    "lo": 35.2,
+    "i": [
+      "Oud",
+      "Ney",
+      "Qanun",
+      "Violin",
+      "Darbuka",
+      "Voice"
+    ],
+    "f": [
+      "Maqam-based vocal improvisation",
+      "Muwashshah",
+      "Samai",
+      "Folk song"
+    ],
+    "b": "Maqam refers to modal systems and melodic practice central to many Middle Eastern musical traditions. This entry groups selected folk and art-music contexts across the Levant and Arabian Peninsula; local styles differ substantially.",
+    "l": "Listen for the unfolding of a maqam, microtonal inflection, and ornamented melodic improvisation.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/muhammad-h-jrifani-mullah-adnan-ensemble/mukhalif/music/track/smithsonian"
+    ]
+  },
+  {
+    "id": "gamelan",
+    "n": "Javanese and Balinese gamelan",
+    "p": "Java and Bali, Indonesia",
+    "r": "Asia",
+    "la": -7.5,
+    "lo": 110.0,
+    "i": [
+      "Metallophones",
+      "Gongs",
+      "Drums",
+      "Rebab",
+      "Suling flute",
+      "Voice"
+    ],
+    "f": [
+      "Gamelan gong cycle",
+      "Wayang accompaniment",
+      "Dance accompaniment",
+      "Gending"
+    ],
+    "b": "Javanese and Balinese gamelan traditions use interlocking metallophones, gongs, and drums, but their tunings, ensembles, and performance aesthetics are distinct and locally varied.",
+    "l": "Listen for interlocking patterns, gong punctuation, and layered cycles moving at different densities.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/genre/gamelan",
+      "https://folkways.si.edu/from-kuno-to-kebyar-balinese-gamelan-angklung/sacred-world/music/album/smithsonian"
+    ]
+  },
+  {
+    "id": "appalachia",
+    "n": "Appalachian folk",
+    "p": "Appalachian Mountains, USA",
+    "r": "Americas",
+    "la": 37.8,
+    "lo": -81.0,
+    "i": [
+      "Fiddle",
+      "Banjo",
+      "Mountain dulcimer",
+      "Guitar",
+      "Voice"
+    ],
+    "f": [
+      "Old-time string-band music",
+      "Ballad",
+      "Clogging dance tune",
+      "Shape-note singing"
+    ],
+    "b": "Appalachian music includes fiddle-and-banjo dance music, ballad singing, and religious repertories shaped by African American, British, Irish, Scots-Irish, and other influences.",
+    "l": "Listen for the rhythmic drive of bowing and banjo patterns, modal melodies, and close vocal harmonies.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/roscoe-holcomb/omie-wise/old-time/music/track/smithsonian"
+    ]
+  },
+  {
+    "id": "nordic",
+    "n": "Nordic fiddle and polska",
+    "p": "Sweden and Norway",
+    "r": "Europe",
+    "la": 60.0,
+    "lo": 15.0,
+    "i": [
+      "Fiddle",
+      "Hardingfele",
+      "Nyckelharpa",
+      "Voice"
+    ],
+    "f": [
+      "Polska",
+      "Halling",
+      "Springar",
+      "Wedding tune"
+    ],
+    "b": "Nordic fiddle traditions include regionally distinct dance forms in Sweden and Norway, including polska and springar variants, alongside local instruments such as the Norwegian hardingfele.",
+    "l": "Listen for asymmetrical dance pulses, ringing sympathetic strings, and regional bowing styles.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/the-swedish-fiddlers-music-from-the-gathering-of-the-fiddlers-at-delsbo/world/music/album/smithsonian"
+    ]
+  },
+  {
+    "id": "georgia",
+    "n": "Georgian polyphonic song",
+    "p": "Georgia",
+    "r": "Asia",
+    "la": 42.3,
+    "lo": 43.4,
+    "i": [
+      "Voice",
+      "Panduri",
+      "Chonguri",
+      "Doli drum"
+    ],
+    "f": [
+      "Polyphonic table song",
+      "Work song",
+      "Healing song",
+      "Chakrulo"
+    ],
+    "b": "Georgian polyphonic singing varies by region, with contrasting three-part textures and distinctive tuning and vocal techniques. Supra (feast) songs and work songs are important contexts.",
+    "l": "Listen for close three-part interplay, sustained bass lines, and regionally distinct harmonic textures.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/russian-choral-music/sacred-world/album/smithsonian"
+    ]
+  },
+  {
+    "id": "hawaii",
+    "n": "Hawaiian slack-key and mele",
+    "p": "Hawaiʻi, USA",
+    "r": "Oceania",
+    "la": 19.6,
+    "lo": -155.5,
+    "i": [
+      "Slack-key guitar",
+      "Ukulele",
+      "Steel guitar",
+      "Voice"
+    ],
+    "f": [
+      "Ki hō‘alu",
+      "Mele",
+      "Hula accompaniment"
+    ],
+    "b": "Hawaiian music includes ki hō‘alu (slack-key guitar), mele (song), and musical practices connected to hula and place-based storytelling. This entry is a broad guide, not a substitute for the diversity of Hawaiian community traditions.",
+    "l": "Listen for open tunings, alternating bass patterns, melodic slides, and the relationship between mele and place.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/kaulaheaonamiku-kiona/hole-waimea-mele-hula/hawaii/music/track/smithsonian"
+    ]
+  },
+  {
+    "id": "mongolia",
+    "n": "Mongolian throat singing and long song",
+    "p": "Mongolia",
+    "r": "Asia",
+    "la": 46.8,
+    "lo": 103.8,
+    "i": [
+      "Morin khuur",
+      "Voice",
+      "Tovshuur",
+      "Limbe flute"
+    ],
+    "f": [
+      "Khöömei throat singing",
+      "Urtiin duu long song",
+      "Epic song"
+    ],
+    "b": "Mongolian vocal traditions include khöömei overtone singing and urtiin duu (long song), practices associated with pastoral life, landscape, and ceremonial contexts.",
+    "l": "Listen for overtone layers in khöömei and the expansive, ornamented phrases of long song.",
+    "st": "review",
+    "src": [
+      "https://folkways.si.edu/mongolia-traditional-music/world/music/album/smithsonian"
+    ]
+  }
+]

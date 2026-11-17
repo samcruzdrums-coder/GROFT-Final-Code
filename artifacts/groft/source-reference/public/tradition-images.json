@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "provider": "Wikimedia Commons API",
+  "policy": {
+    "allowed_licenses": [
+      "CC0",
+      "Public domain",
+      "CC BY",
+      "CC BY-SA"
+    ],
+    "exclude_ai_labels": true,
+    "require_creator_or_credit": true,
+    "remote_fetch": "lazy per tradition when its detail view opens",
+    "fallback": "show an explicit no-image-found placeholder; never generate or substitute unrelated imagery"
+  },
+  "traditions": [
+    {
+      "tradition_id": "irish",
+      "tradition_name": "Irish traditional",
+      "place": "Ireland",
+      "search_query": "Irish traditional Ireland traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "rajasthan",
+      "tradition_name": "Manganiyar and Langa songs",
+      "place": "Rajasthan, India",
+      "search_query": "Manganiyar and Langa songs Rajasthan, India traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "andes",
+      "tradition_name": "Andean highland music",
+      "place": "Peru, Bolivia and Ecuador",
+      "search_query": "Andean highland music Peru, Bolivia and Ecuador traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "mande",
+      "tradition_name": "Mandé griot music",
+      "place": "Mali, Guinea and Gambia",
+      "search_query": "Mandé griot music Mali, Guinea and Gambia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "japan",
+      "tradition_name": "Min'yō",
+      "place": "Japan",
+      "search_query": "Min'yō Japan traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "flamenco",
+      "tradition_name": "Flamenco",
+      "place": "Andalusia, Spain",
+      "search_query": "Flamenco Andalusia, Spain traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "hungary",
+      "tradition_name": "Hungarian and Romani village music",
+      "place": "Hungary and Transylvania",
+      "search_query": "Hungarian and Romani village music Hungary and Transylvania traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "maqam",
+      "tradition_name": "Maqam folk traditions",
+      "place": "The Levant and Arabian Peninsula",
+      "search_query": "Maqam folk traditions The Levant and Arabian Peninsula traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "gamelan",
+      "tradition_name": "Javanese and Balinese gamelan",
+      "place": "Java and Bali, Indonesia",
+      "search_query": "Javanese and Balinese gamelan Java and Bali, Indonesia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "appalachia",
+      "tradition_name": "Appalachian folk",
+      "place": "Appalachian Mountains, USA",
+      "search_query": "Appalachian folk Appalachian Mountains, USA traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "nordic",
+      "tradition_name": "Nordic fiddle and polska",
+      "place": "Sweden and Norway",
+      "search_query": "Nordic fiddle and polska Sweden and Norway traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "georgia",
+      "tradition_name": "Georgian polyphonic song",
+      "place": "Georgia",
+      "search_query": "Georgian polyphonic song Georgia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "hawaii",
+      "tradition_name": "Hawaiian slack-key and mele",
+      "place": "Hawaiʻi, USA",
+      "search_query": "Hawaiian slack-key and mele Hawaiʻi, USA traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "mongolia",
+      "tradition_name": "Mongolian throat singing and long song",
+      "place": "Mongolia",
+      "search_query": "Mongolian throat singing and long song Mongolia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "fado",
+      "tradition_name": "Fado",
+      "place": "Lisbon and Coimbra, Portugal",
+      "search_query": "Fado Lisbon and Coimbra, Portugal traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "sardinia-tenore",
+      "tradition_name": "Sardinian cantu a tenore",
+      "place": "Barbagia, Sardinia, Italy",
+      "search_query": "Sardinian cantu a tenore Barbagia, Sardinia, Italy traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "bulgaria",
+      "tradition_name": "Bulgarian village song and dance",
+      "place": "Rhodopes and Thrace, Bulgaria",
+      "search_query": "Bulgarian village song and dance Rhodopes and Thrace, Bulgaria traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "scotland-piping",
+      "tradition_name": "Scottish Highland piping",
+      "place": "Scottish Highlands, UK",
+      "search_query": "Scottish Highland piping Scottish Highlands, UK traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "balkan-brass",
+      "tradition_name": "Balkan brass bands",
+      "place": "Serbia and the central Balkans",
+      "search_query": "Balkan brass bands Serbia and the central Balkans traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "sami-joik",
+      "tradition_name": "Sámi joik",
+      "place": "Sápmi, northern Scandinavia",
+      "search_query": "Sámi joik Sápmi, northern Scandinavia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "gnawa",
+      "tradition_name": "Gnawa music",
+      "place": "Essaouira and Marrakech, Morocco",
+      "search_query": "Gnawa music Essaouira and Marrakech, Morocco traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "ethiopia-azmari",
+      "tradition_name": "Ethiopian azmari music",
+      "place": "Highland Ethiopia",
+      "search_query": "Ethiopian azmari music Highland Ethiopia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "zulu-isicathamiya",
+      "tradition_name": "Zulu isicathamiya and maskandi",
+      "place": "KwaZulu-Natal, South Africa",
+      "search_query": "Zulu isicathamiya and maskandi KwaZulu-Natal, South Africa traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "shona-mbira",
+      "tradition_name": "Shona mbira music",
+      "place": "Zimbabwe",
+      "search_query": "Shona mbira music Zimbabwe traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "tuareg",
+      "tradition_name": "Tuareg music",
+      "place": "Sahara: Mali, Niger and Algeria",
+      "search_query": "Tuareg music Sahara: Mali, Niger and Algeria traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "cape-verde",
+      "tradition_name": "Cape Verdean morna",
+      "place": "Cape Verde",
+      "search_query": "Cape Verdean morna Cape Verde traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "burundi-drums",
+      "tradition_name": "Burundian ceremonial drumming",
+      "place": "Burundi",
+      "search_query": "Burundian ceremonial drumming Burundi traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "baul",
+      "tradition_name": "Baul songs",
+      "place": "Bengal, India and Bangladesh",
+      "search_query": "Baul songs Bengal, India and Bangladesh traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "pansori",
+      "tradition_name": "Korean pansori",
+      "place": "Jeolla region, South Korea",
+      "search_query": "Korean pansori Jeolla region, South Korea traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "uyghur-muqam",
+      "tradition_name": "Uyghur muqam",
+      "place": "Tarim Basin, Xinjiang, China",
+      "search_query": "Uyghur muqam Tarim Basin, Xinjiang, China traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "quan-ho",
+      "tradition_name": "Quan họ",
+      "place": "Bắc Ninh, Vietnam",
+      "search_query": "Quan họ Bắc Ninh, Vietnam traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "kulintang",
+      "tradition_name": "Kulintang ensembles",
+      "place": "Mindanao, Philippines",
+      "search_query": "Kulintang ensembles Mindanao, Philippines traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "kazakh-dombra",
+      "tradition_name": "Kazakh kuy and dombra",
+      "place": "Kazakhstan",
+      "search_query": "Kazakh kuy and dombra Kazakhstan traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "mor-lam",
+      "tradition_name": "Mor lam",
+      "place": "Isan, Thailand and Laos",
+      "search_query": "Mor lam Isan, Thailand and Laos traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "qawwali",
+      "tradition_name": "Qawwali",
+      "place": "Punjab and Sindh, Pakistan and India",
+      "search_query": "Qawwali Punjab and Sindh, Pakistan and India traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "kurdish-dengbej",
+      "tradition_name": "Kurdish dengbêj tradition",
+      "place": "Kurdish regions of Turkey, Iraq, Iran and Syria",
+      "search_query": "Kurdish dengbêj tradition Kurdish regions of Turkey, Iraq, Iran and Syria traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "turkish-asik",
+      "tradition_name": "Aşık bardic tradition",
+      "place": "Anatolia, Turkey",
+      "search_query": "Aşık bardic tradition Anatolia, Turkey traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "gulf-fijiri",
+      "tradition_name": "Fijiri pearl-diving songs",
+      "place": "Bahrain and the Arabian Gulf",
+      "search_query": "Fijiri pearl-diving songs Bahrain and the Arabian Gulf traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "son-jarocho",
+      "tradition_name": "Son jarocho",
+      "place": "Veracruz, Mexico",
+      "search_query": "Son jarocho Veracruz, Mexico traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "cumbia",
+      "tradition_name": "Cumbia",
+      "place": "Caribbean coast, Colombia",
+      "search_query": "Cumbia Caribbean coast, Colombia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "samba-de-roda",
+      "tradition_name": "Samba de roda",
+      "place": "Recôncavo, Bahia, Brazil",
+      "search_query": "Samba de roda Recôncavo, Bahia, Brazil traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "cuban-son",
+      "tradition_name": "Cuban son",
+      "place": "Oriente, Cuba",
+      "search_query": "Cuban son Oriente, Cuba traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "inuit-katajjaq",
+      "tradition_name": "Inuit throat singing",
+      "place": "Nunavik and Nunavut, Canada",
+      "search_query": "Inuit throat singing Nunavik and Nunavut, Canada traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "cajun-zydeco",
+      "tradition_name": "Cajun and zydeco music",
+      "place": "Louisiana, USA",
+      "search_query": "Cajun and zydeco music Louisiana, USA traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "yolngu-manikay",
+      "tradition_name": "Yolŋu manikay",
+      "place": "Arnhem Land, Australia",
+      "search_query": "Yolŋu manikay Arnhem Land, Australia traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "maori-waiata",
+      "tradition_name": "Māori waiata and haka",
+      "place": "Aotearoa New Zealand",
+      "search_query": "Māori waiata and haka Aotearoa New Zealand traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "tonga-lakalaka",
+      "tradition_name": "Tongan lakalaka",
+      "place": "Tonga",
+      "search_query": "Tongan lakalaka Tonga traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "fiji-meke",
+      "tradition_name": "Fijian meke",
+      "place": "Fiji",
+      "search_query": "Fijian meke Fiji traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "salsa",
+      "tradition_name": "Salsa",
+      "place": "New York City, with Cuban and Puerto Rican roots",
+      "search_query": "Salsa New York City, with Cuban and Puerto Rican roots traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "cuban-rumba",
+      "tradition_name": "Cuban rumba",
+      "place": "Havana and Matanzas, Cuba",
+      "search_query": "Cuban rumba Havana and Matanzas, Cuba traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "guaguanco",
+      "tradition_name": "Guaguancó",
+      "place": "Havana and Matanzas, Cuba",
+      "search_query": "Guaguancó Havana and Matanzas, Cuba traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "bomba",
+      "tradition_name": "Bomba",
+      "place": "Loíza, Santurce and Ponce, Puerto Rico",
+      "search_query": "Bomba Loíza, Santurce and Ponce, Puerto Rico traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "plena",
+      "tradition_name": "Plena",
+      "place": "Ponce, Puerto Rico",
+      "search_query": "Plena Ponce, Puerto Rico traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "jibaro",
+      "tradition_name": "Puerto Rican jíbaro music",
+      "place": "Highlands of Puerto Rico",
+      "search_query": "Puerto Rican jíbaro music Highlands of Puerto Rico traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "merengue",
+      "tradition_name": "Merengue",
+      "place": "Dominican Republic",
+      "search_query": "Merengue Dominican Republic traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "bachata",
+      "tradition_name": "Bachata",
+      "place": "Dominican Republic",
+      "search_query": "Bachata Dominican Republic traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "dominican-palo",
+      "tradition_name": "Dominican palo",
+      "place": "Villa Mella, Dominican Republic",
+      "search_query": "Dominican palo Villa Mella, Dominican Republic traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "haiti-rara",
+      "tradition_name": "Haitian rara",
+      "place": "Haiti",
+      "search_query": "Haitian rara Haiti traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "vodou-drumming",
+      "tradition_name": "Haitian Vodou drumming",
+      "place": "Haiti",
+      "search_query": "Haitian Vodou drumming Haiti traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "jamaican-mento",
+      "tradition_name": "Jamaican mento",
+      "place": "Rural Jamaica",
+      "search_query": "Jamaican mento Rural Jamaica traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "nyabinghi",
+      "tradition_name": "Nyabinghi drumming",
+      "place": "Jamaica",
+      "search_query": "Nyabinghi drumming Jamaica traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "calypso",
+      "tradition_name": "Calypso and soca",
+      "place": "Trinidad and Tobago",
+      "search_query": "Calypso and soca Trinidad and Tobago traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "steelpan",
+      "tradition_name": "Steelpan and steel bands",
+      "place": "Trinidad and Tobago",
+      "search_query": "Steelpan and steel bands Trinidad and Tobago traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "garifuna",
+      "tradition_name": "Garifuna music",
+      "place": "Caribbean coast of Belize, Honduras and Guatemala",
+      "search_query": "Garifuna music Caribbean coast of Belize, Honduras and Guatemala traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "danzon",
+      "tradition_name": "Danzón",
+      "place": "Matanzas, Cuba",
+      "search_query": "Danzón Matanzas, Cuba traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "punto-guajiro",
+      "tradition_name": "Cuban punto guajiro",
+      "place": "Cuban countryside",
+      "search_query": "Cuban punto guajiro Cuban countryside traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "bata-drums",
+      "tradition_name": "Batá drumming",
+      "place": "Cuba",
+      "search_query": "Batá drumming Cuba traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "santiago-conga",
+      "tradition_name": "Santiago de Cuba conga and carnival",
+      "place": "Santiago de Cuba, Cuba",
+      "search_query": "Santiago de Cuba conga and carnival Santiago de Cuba, Cuba traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "gwo-ka",
+      "tradition_name": "Gwo ka",
+      "place": "Guadeloupe",
+      "search_query": "Gwo ka Guadeloupe traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "barbados-tuk",
+      "tradition_name": "Barbadian tuk",
+      "place": "Barbados",
+      "search_query": "Barbadian tuk Barbados traditional music musicians documentary photograph"
+    },
+    {
+      "tradition_id": "junkanoo",
+      "tradition_name": "Junkanoo",
+      "place": "The Bahamas",
+      "search_query": "Junkanoo The Bahamas traditional music musicians documentary photograph"
+    }
+  ]
+}

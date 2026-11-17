@@ -1,0 +1,1002 @@
+{
+"traditions": {
+"fado": [
+{
+"kind": "youtube",
+"id": "YcrihhMdfyE",
+"title": "Live Fado at Tasca do Chico, Lisboa, Portugal - Fado Vadio",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "V06bL6QFTyg",
+"title": "Live Fado in Lisbon - Fado & Fado Sé - Portugal - Live Music - Fado Concert",
+"credit": "Captured (verified live performance)"
+}
+],
+"sardinia-tenore": [
+{
+"kind": "youtube",
+"id": "KITtJ3gtpM8",
+"title": "Tenores de Aterúe - Ballu Dillu (A Sa Campagna) - Sardinian Song",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "cZ1xl09jpis",
+"title": "Sardinian throat singing aka Cantu a Tenore",
+"credit": "Captured (verified archival performance)"
+}
+],
+"bulgaria": [
+{
+"kind": "youtube",
+"id": "OliBbjdfADQ",
+"title": "Authentic bulgarian folk singing - Northern Rhodope mountains 1",
+"credit": "Captured (verified field recording)"
+},
+{
+"kind": "youtube",
+"id": "4aG5jNWClVI",
+"title": "Authentic Bulgarian folk singing - Northern Rhodope mountains 3",
+"credit": "Captured (verified field recording)"
+}
+],
+"scotland-piping": [
+{
+"kind": "youtube",
+"id": "YMAEnAz0Hr0",
+"title": "Born of the Highlands: Traditional Bagpipe & Uilleann Music for the Celtic Soul",
+"credit": "Captured from your CSV"
+},
+{
+"kind": "youtube",
+"id": "xVAVE5i_10Q",
+"title": "Valley of the Deer Revue: The Best of Highland Piping",
+"credit": "Captured (verified live performance)"
+}
+],
+"balkan-brass": [
+{
+"kind": "youtube",
+"id": "ZhfUg9Ubn4Q",
+"title": "BOJAN RISTIC BRASS BAND & BALKAN LAB ORCHESTRA - Live in Rome - 2024 - The groove critical mass",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "HXTFo3ydQt8",
+"title": "Live in Rome - 2024 - Colors of Balkan Brass Band",
+"credit": "Captured (verified live performance)"
+}
+],
+"sami-joik": [
+{
+"kind": "youtube",
+"id": "bLhmmChzkl0",
+"title": "Mari Boine - Gula Gula (Hear the voices of the foremothers) by Jan Helmer Olsen",
+"credit": "Captured from your CSV (link is a YouTube search for this video)"
+},
+{
+"kind": "youtube",
+"id": "w-0_JFBWzwU",
+"title": "Traditional Sámi Joik by Ellen Molnia | Joiking by a Lake in Sweden",
+"credit": "Captured (verified field recording)"
+}
+],
+"gnawa": [
+{
+"kind": "youtube",
+"id": "ETXwnR-I44Q",
+"title": "Innov Gnawa - Lila Live Session",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "EE-BQcn2wmY",
+"title": "Gnawa Music Live Audio – Traditional Moroccan Spiritual Groove",
+"credit": "Captured (verified live recording)"
+}
+],
+"ethiopia-azmari": [
+{
+"kind": "youtube",
+"id": "Msp2D1Pb9CU",
+"title": "Azmari Synthesis - Anchi Hoye Set",
+"credit": "Captured from your CSV"
+},
+{
+"kind": "youtube",
+"id": "ptpj4NiG99U",
+"title": "New Ethiopian traditional music Azmari # አዝማሪ # Live performance RAKEB TUBE 2022",
+"credit": "Captured (verified live performance)"
+}
+],
+"zulu-isicathamiya": [
+{
+"kind": "youtube",
+"id": "s1E4aVig4jk",
+"title": "Ladysmith Black Mambazo on Isicathamiya and Nelson Mandela on the Hive with Bonolo Beesting",
+"credit": "Captured (verified artist session)"
+},
+{
+"kind": "youtube",
+"id": "C4khOakpNMg",
+"title": "Music | The legacy of Isichathamiya lives on",
+"credit": "Captured (verified broadcast session)"
+}
+],
+"shona-mbira": [
+{
+"kind": "youtube",
+"id": "7NcpoVHa5ys",
+"title": "Chartwell Dutiro & Spirit Talk Mbira - Nhemamusasa - LIVE at Afrikafestival Hertme 2018",
+"credit": "Captured (verified festival live)"
+},
+{
+"kind": "youtube",
+"id": "4Q5lkxk8jXQ",
+"title": "\"Taireva\" Zimbabwe, Mbira Music - Garikayi Tirikoti Live at Africa Tairiku",
+"credit": "Captured (verified live performance)"
+}
+],
+"tuareg": [
+{
+"kind": "youtube",
+"id": "Bt_7MmDigY0",
+"title": "EXIT 2016 | Tinariwen Live @ Main Stage FULL HD Show",
+"credit": "Captured (verified festival live)"
+},
+{
+"kind": "youtube",
+"id": "gIK4krk54XA",
+"title": "Tuareg Blues Guitar Live in Akacia's Shade | Soulful Sahara Sounds",
+"credit": "Captured (verified live performance)"
+}
+],
+"cape-verde": [
+{
+"kind": "youtube",
+"id": "D42sEodhUls",
+"title": "Sodade: Traditional Morna Music from Cape Verde | Island Songs of Longing",
+"credit": "Captured (verified traditional compilation)"
+},
+{
+"kind": "youtube",
+"id": "S-QnZSY1qQM",
+"title": "Guents dy Rincon (Cabo Verde) - Morna - live in Cascais (Portugal) 2017",
+"credit": "Captured (verified live performance)"
+}
+],
+"burundi-drums": [
+{
+"kind": "youtube",
+"id": "0SSxrEgltJc",
+"title": "The Drummers of Burundi - Traditional (live at WOMAD Rivermead)",
+"credit": "Captured (verified festival live)"
+},
+{
+"kind": "youtube",
+"id": "XqLglmFRyRI",
+"title": "Burundi Drummers - LIVE at Afrikafestival Hertme 2013",
+"credit": "Captured (verified festival live)"
+}
+],
+"baul": [
+{
+"kind": "youtube",
+"id": "r_D4DwY1tW0",
+"title": "GAUTAM DAS BAUL....LIVE RECORDING OF BAUL GAAN",
+"credit": "Captured from your CSV (link is a YouTube search for this video)",
+"note": "Closest match: the exact video in your sheet (\"Best Of Bhober Baul Gaan | Live Stage Pregame\") could not be found. This is an unedited live Baul recording from Shantiniketan."
+},
+{
+"kind": "youtube",
+"id": "mBHKVHifkpM",
+"title": "Best live performances of Papiya Gain and Nupur Sarkar | লোকগীতি বাউল গান | Latest Baul Gaan",
+"credit": "Captured (verified field recording)"
+}
+],
+"pansori": [
+{
+"kind": "youtube",
+"id": "7UgNOvHx4_c",
+"title": "[Daily Gugak] Day 5–Pansori “Simcheongga” (Song of Simcheong) -“Blind Sim Regaining his Sight” Scene",
+"credit": "Captured (National Gugak Center)"
+},
+{
+"kind": "youtube",
+"id": "uZPhlt-9WA4",
+"title": "Enjoy Chuseok with world-renowned Korean traditional pansori performance 'Simcheongga'",
+"credit": "Captured (National Theater / Arirang)"
+}
+],
+"uyghur-muqam": [
+{
+"kind": "youtube",
+"id": "EGsuiL4KIfY",
+"title": "Uyghur Nawa Muqam - Live Performance",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "E1vkaWUDopk",
+"title": "Uyghur Muqam Live Performance",
+"credit": "Captured (verified live performance)"
+}
+],
+"quan-ho": [
+{
+"kind": "youtube",
+"id": "iog_akn_Upk",
+"title": "ベトナム文化遺産クアンホー民謡のグランドリングでの特別公演 (Quan họ Bắc Ninh)",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "qJsdZn_Pkw4",
+"title": "Final Round of the 50 Best Traditional Quan Ho Folk Songs of 2026",
+"credit": "Captured (verified competition live)"
+}
+],
+"kulintang": [
+{
+"kind": "youtube",
+"id": "LLTe00gbGLw",
+"title": "philippine kulintang ensemble - binalig with drumset",
+"credit": "Captured (verified concert recording)"
+},
+{
+"kind": "youtube",
+"id": "QDWPNqgMqRw",
+"title": "Kulintang Dialect Musical Performance",
+"credit": "Captured (verified live performance)"
+}
+],
+"kazakh-dombra": [
+{
+"kind": "youtube",
+"id": "zEb1KfraKc4",
+"title": "Aitolkyn Toktagan: Kazachstaanse Kuys “Fluistering van Tengri”",
+"credit": "Captured (verified live recital)"
+},
+{
+"kind": "youtube",
+"id": "_58nV2X52Lo",
+"title": "Dombra: The Unique Voice of Tradition",
+"credit": "Captured (verified concert program)"
+}
+],
+"mor-lam": [
+{
+"kind": "youtube",
+"id": "e6CEqQYoS4k",
+"title": "06 Mor Lam",
+"credit": "Captured (Thai Cultural Archive)"
+},
+{
+"kind": "youtube",
+"id": "9IjbLvpW_AY",
+"title": "Mor Lam is a traditional folk performing art of the Isan people.",
+"credit": "Captured (Cultural Office recording)"
+}
+],
+"qawwali": [
+{
+"kind": "youtube",
+"id": "SDfELfpumEE",
+"title": "Nusrat Fateh Ali Khan - Mustt Mustt (Live at WOMAD Yokohama 1992)",
+"credit": "Captured (Real World / WOMAD live)"
+},
+{
+"kind": "youtube",
+"id": "VkRI7L_OncQ",
+"title": "Sassi Punnu Qawwali 2026 | Moin Afzal Chand Qawwal Punjabi Folk Qawwali | Live Performance",
+"credit": "Captured (verified live mehfil)"
+}
+],
+"kurdish-dengbej": [
+{
+"kind": "youtube",
+"id": "7WhvUIZIh3g",
+"title": "Songs of the Dengbêj, or Kurdish Bards (Van, Turkey)",
+"credit": "Captured (Jungles in Paris field film)"
+},
+{
+"kind": "youtube",
+"id": "a0__1IYhj2g",
+"title": "Dengbej Mehmet Ekmen - Mizgin Live KÜRTÇE ŞARKILAR",
+"credit": "Captured (verified live performance)"
+}
+],
+"turkish-asik": [
+{
+"kind": "youtube",
+"id": "_NqYeNVDolQ",
+"title": "Neşet Ertaş - Kaşların Karasına [ Live Concert © 2000 Kalan Müzik ]",
+"credit": "Captured (Kalan Müzik live archive)"
+},
+{
+"kind": "youtube",
+"id": "oBh-zFOQsRc",
+"title": "Kendim Ettim Kendim Buldum - Neşet Ertaş | Canlı Performans",
+"credit": "Captured (verified live performance)"
+}
+],
+"gulf-fijiri": [
+{
+"kind": "youtube",
+"id": "vKTVYwcDMec",
+"title": "Dana Al Fardan - Fjiri (2017)",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "HTlP7GcpKaQ",
+"title": "Bahrain Fidjeri Songs of the Pearl Divers",
+"credit": "Captured (UNESCO 1978 field archive)"
+}
+],
+"son-jarocho": [
+{
+"kind": "youtube",
+"id": "KH6mNn9pc0E",
+"title": "Los Cojolites - Sembrando Flores (video oficial)",
+"credit": "Captured from your CSV (link is a YouTube search for this video)"
+},
+{
+"kind": "youtube",
+"id": "uZp91Brgtd8",
+"title": "El Cascabel, Genaro Sulvarán, Tlen Huicani",
+"credit": "Captured from your CSV (link is a YouTube search for this video)",
+"note": "Matched by title to your sheet's \"Cascabel - Tlenhuicani\"."
+}
+],
+"cumbia": [
+{
+"kind": "youtube",
+"id": "4ZZDQZrPfuQ",
+"title": "Cumbian Colors - Luna de Cumbia (Live Session)",
+"credit": "Captured (verified live session)"
+},
+{
+"kind": "youtube",
+"id": "FCkfu2yy4RE",
+"title": "Los Gaiteros de San Jacinto - Live at Le Guess Who?",
+"credit": "Captured (verified festival live)"
+}
+],
+"samba-de-roda": [
+{
+"kind": "youtube",
+"id": "YNp5jZVZDJM",
+"title": "Sambaiana - Samba de roda | Ao Vivo no Rio Vermelho",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "lIN-EIs4VzE",
+"title": "The Samba de Roda of Recôncavo of Bahia",
+"credit": "Captured (UNESCO ICH archive)"
+}
+],
+"cuban-son": [
+{
+"kind": "youtube",
+"id": "W0GbdjUvONU",
+"title": "Idilio (Manuel Romero) Sones de Oriente / Cuban Music / Música Tradicional Cubana a Cuba",
+"credit": "Captured (verified live street/trova)"
+},
+{
+"kind": "youtube",
+"id": "Rj50YeR0zh8",
+"title": "Sones from Oriente at the Bohemio in Santiago de Cuba / Cuban Music / Traditional Cuban Music",
+"credit": "Captured (verified live in Santiago)"
+}
+],
+"inuit-katajjaq": [
+{
+"kind": "youtube",
+"id": "fPI2dXcn8Vw",
+"title": "Katajjacoustic: Traditional Throat Singing of the Inuit",
+"credit": "Captured from your CSV"
+},
+{
+"kind": "youtube",
+"id": "8IqOegVCNKI",
+"title": "Karin and Kathy Kettler - Inuit Throat-Singing Demonstration",
+"credit": "Captured from your CSV"
+}
+],
+"cajun-zydeco": [
+{
+"kind": "youtube",
+"id": "FVGVadzWtmc",
+"title": "Buckwheat Zydeco - Full Set - Louisiana Cajun Zydeco Festival 2025",
+"credit": "Captured (WWOZ live festival)"
+},
+{
+"kind": "youtube",
+"id": "6tBFQh0N8YQ",
+"title": "2025 Louisiana Cajun Zydeco Fest",
+"credit": "Captured (WWOZ live festival)"
+}
+],
+"yolngu-manikay": [
+{
+"kind": "youtube",
+"id": "0G03d_qfvWk",
+"title": "Traditional Aboriginal Dance manikay & bunggul | Ngaymil songs, Milingimbi",
+"credit": "Captured (verified community recording)"
+},
+{
+"kind": "youtube",
+"id": "dPKiFBgTFaE",
+"title": "Garma Festival 2023 - Behind the News",
+"credit": "Captured (ABC Australia festival report)"
+}
+],
+"maori-waiata": [
+{
+"kind": "youtube",
+"id": "Jap-wPR7H_A",
+"title": "Te Iwi E from Te Whānau Wehi - Performed by the New Zealand Youth Choir",
+"credit": "Captured from your CSV (link is a YouTube search for this video)",
+"note": "Closest match: your sheet's \"Te Iwi e\" had no direct link. This is a concert performance of that waiata."
+},
+{
+"kind": "youtube",
+"id": "w_PjaERBvOU",
+"title": "Hape - Haka Waiata / 2025 ( 1st Place )",
+"credit": "Captured (verified live kapa haka)"
+}
+],
+"tonga-lakalaka": [
+{
+"kind": "youtube",
+"id": "tF7KpvBl0tk",
+"title": "The Lakalaka, Dances and Sung Speeches of Tonga",
+"credit": "Captured (UNESCO ICH archive)"
+},
+{
+"kind": "youtube",
+"id": "zxg1BiYvAXE",
+"title": "Lakalaka | Pacific Digital Dance | Tonga | Lea Faka-Tonga",
+"credit": "Captured (Pacific Kids Learning)"
+}
+],
+"fiji-meke": [
+{
+"kind": "youtube",
+"id": "8iOvV7HAgiA",
+"title": "Fijian Women Meke Performance",
+"credit": "Captured (Fiji Sun live event)"
+},
+{
+"kind": "youtube",
+"id": "bPaeCmXPRVU",
+"title": "Traditional Meke | Westlake Boys High School",
+"credit": "Captured (verified live performance)"
+}
+],
+"salsa": [
+{
+"kind": "youtube",
+"id": "EaHMG-6v2u8",
+"title": "Fania All Stars - Live at Yankee Stadium (Anniversary Livestream)",
+"credit": "Captured (Fania official live)"
+},
+{
+"kind": "youtube",
+"id": "dtBDxFacC8I",
+"title": "Héctor Lavoe y Willie Colón - Presentación en los PBS Studios, NYC (1972)",
+"credit": "Captured (PBS NYC 1972 live)"
+}
+],
+"cuban-rumba": [
+{
+"kind": "youtube",
+"id": "cU2p8xyqysQ",
+"title": "Los Muñequitos De Matanzas Live in Matanzas, Cuba",
+"credit": "Captured (Congahead field live)"
+},
+{
+"kind": "youtube",
+"id": "ipYLLm1HlwI",
+"title": "Matanzas Afro-Cuban Rumba All Stars",
+"credit": "Captured (verified live performance)"
+}
+],
+"guaguanco": [
+{
+"kind": "youtube",
+"id": "mzqCAUUsod4",
+"title": "Oye Mi Guaganco (Live (1999/Birdland))",
+"credit": "Captured (Tito Puente Birdland live)"
+},
+{
+"kind": "youtube",
+"id": "M3S5fO_HnBo",
+"title": "UEA - Elito Revé y su Charangón - 70th Anniversary Concert at Guaguancó Festival 2026",
+"credit": "Captured (verified festival live)"
+}
+],
+"bomba": [
+{
+"kind": "youtube",
+"id": "ZummXOaoXuo",
+"title": "Bomba Puertorriqueña - Delegación de Loíza",
+"credit": "Captured from your CSV"
+},
+{
+"kind": "youtube",
+"id": "zBfLHm0QrRA",
+"title": "Puerto Rican Bomba: Old San Juan",
+"credit": "Captured (Familia Cepeda live)"
+}
+],
+"plena": [
+{
+"kind": "youtube",
+"id": "9m5tsuyOYKE",
+"title": "César Concepción - Plena En Ponce - Victor 23-5242-A",
+"credit": "Captured (Frontera archival recording)"
+},
+{
+"kind": "youtube",
+"id": "zJ2YSNsafQE",
+"title": "En Vivo Los Pleneros de la 21 #plena #puertorico",
+"credit": "Captured (verified live performance)"
+}
+],
+"jibaro": [
+{
+"kind": "youtube",
+"id": "cRYMoG3fOqk",
+"title": "Ecos de Borinquen - \"El Cuatro\" [Live Performance Video]",
+"credit": "Captured (Smithsonian Folkways live)"
+},
+{
+"kind": "youtube",
+"id": "wus8KdOogdA",
+"title": "Ecos de Borinquen - \"Mujer Borinqueña\" [Live Performance Video]",
+"credit": "Captured (Smithsonian Folkways live)"
+}
+],
+"merengue": [
+{
+"kind": "youtube",
+"id": "5aDK0cfmNpM",
+"title": "Merengue. Street concert Dominican Republic. Grupo Bonye.",
+"credit": "Captured (verified Santo Domingo live)"
+},
+{
+"kind": "youtube",
+"id": "vz6CyOaEMWs",
+"title": "International Dominican Night St Thomas USVI. Live Merengue Music.",
+"credit": "Captured (verified live performance)"
+}
+],
+"bachata": [
+{
+"kind": "youtube",
+"id": "OOyVGKu5QwA",
+"title": "DR9 Anthony Santos Concert @ Fantino DomRep",
+"credit": "Captured (verified live concert)"
+},
+{
+"kind": "youtube",
+"id": "37725HqaJxk",
+"title": "el varón de la Bachata en vivo total",
+"credit": "Captured (verified live performance)"
+}
+],
+"dominican-palo": [
+{
+"kind": "youtube",
+"id": "AWoRALIlOtc",
+"title": "Congos de Villa Mella - Practica y Baile",
+"credit": "Captured (verified field recording)"
+},
+{
+"kind": "youtube",
+"id": "VL1dTjiB_vs",
+"title": "Los Congos de villa mella una agrupación de música cultural emblemática de la Rep. Dom. | Objetivo 5",
+"credit": "Captured (Telemicro broadcast)"
+}
+],
+"haiti-rara": [
+{
+"kind": "youtube",
+"id": "lvwtcbjG0Zo",
+"title": "Rara - Haiti",
+"credit": "Captured (verified percussion live)"
+},
+{
+"kind": "youtube",
+"id": "zpmtMPayEMQ",
+"title": "Haitian Rara live in Port-o-Prince, Haiti",
+"credit": "Captured (verified street live)"
+}
+],
+"vodou-drumming": [
+{
+"kind": "youtube",
+"id": "9gf6_WastgU",
+"title": "Haitian Culture Vodou",
+"credit": "Captured (verified ceremony live)"
+},
+{
+"kind": "youtube",
+"id": "K0vC-TPyaeo",
+"title": "Drums of Haiti Folkloric Haitian Drums, ensemble Dance Live (Multi-Camera Event Performance)",
+"credit": "Captured (verified live performance)"
+}
+],
+"jamaican-mento": [
+{
+"kind": "youtube",
+"id": "Be7nEJ4NDX0",
+"title": "Jamaican Mento Music",
+"credit": "Captured (verified traditional performance)"
+},
+{
+"kind": "youtube",
+"id": "Wfza4Mc-paI",
+"title": "SWEET MENTO MUSIC! Thinking Of A New Jamaica by Stanley Beckford | Performed by the YARDY VIBES band",
+"credit": "Captured (verified live performance)"
+}
+],
+"nyabinghi": [
+{
+"kind": "youtube",
+"id": "SQIbz8JVA24",
+"title": "Nyabinghi Rasta Drum Session in the Blue Mountains, Jamaica",
+"credit": "Captured (verified field session)"
+},
+{
+"kind": "youtube",
+"id": "RgsO9Io_Fr8",
+"title": "Nyabinghi Drumming Live at JARIA Reggae Month Concert 2013",
+"credit": "Captured (Mystic Revelation live)"
+}
+],
+"calypso": [
+{
+"kind": "youtube",
+"id": "3XtHS3B11aY",
+"title": "CARNIVAL JAMBOREE 2026 # 3: The Best of Political Calypso!",
+"credit": "Captured (Wack TV / CITV live)"
+},
+{
+"kind": "youtube",
+"id": "OP4djIzi0zo",
+"title": "Trinidad Carnival 2026: The Most Explosive Performances You Can't Miss!",
+"credit": "Captured (CITV live showcase)"
+}
+],
+"steelpan": [
+{
+"kind": "youtube",
+"id": "Uc27yyXKTm4",
+"title": "LIVE at Trinidad All Stars Day | 90 Years of Steelpan Excellence at TASSO Panyard!",
+"credit": "Captured (verified panyard live)"
+},
+{
+"kind": "youtube",
+"id": "cHIhVawlQwU",
+"title": "Massy Trinidad All Stars, Steel Pan Orchestra, Full Live Concert",
+"credit": "Captured (verified concert live)"
+}
+],
+"garifuna": [
+{
+"kind": "youtube",
+"id": "T3C8YYVRN1w",
+"title": "Wanaragua Songs in Roatán Honduras (Full Performance)",
+"credit": "Captured (verified field recording)"
+},
+{
+"kind": "youtube",
+"id": "IAEQzRNz1D8",
+"title": "The Garifuna Collective - Ubou - Live at Afrika Festival Hertme 2019",
+"credit": "Captured (verified festival live)"
+}
+],
+"danzon": [
+{
+"kind": "youtube",
+"id": "cSqN5aSAcSY",
+"title": "Masacre - Orquesta Failde | DANZÓN (Danzoneando. En vivo desde Matanzas)",
+"credit": "Captured (Orquesta Failde live)"
+},
+{
+"kind": "youtube",
+"id": "tvgT4R8XdUg",
+"title": "Paquito D'Rivera: Gran Danzon Concerto (Live Performance)",
+"credit": "Captured (verified concert live)"
+}
+],
+"punto-guajiro": [
+{
+"kind": "youtube",
+"id": "pSjQoBoo4I0",
+"title": "El punto guajiro en El Happy Hour - AméricaTevé",
+"credit": "Captured (verified TV live)"
+},
+{
+"kind": "youtube",
+"id": "74fmsFpq_gw",
+"title": "Punto Cubano. David Blanco. Aniversario 61 de la Revolución",
+"credit": "Captured (Cubavisión live)"
+}
+],
+"bata-drums": [
+{
+"kind": "youtube",
+"id": "qYqY8x3U9MA",
+"title": "Cuba | Batá Drums of the Cuban Santería | Ensemble Omo Abillona | Meta for the Oricha Changó",
+"credit": "Captured (Fondazione Cini live)"
+},
+{
+"kind": "youtube",
+"id": "BRkFhbb6L3Q",
+"title": "Afro Cuban Batá Drumming Ceremony with Rumbatá – Chango",
+"credit": "Captured (verified ceremony live)"
+}
+],
+"santiago-conga": [
+{
+"kind": "youtube",
+"id": "AH0BWxxqpfk",
+"title": "CONGA DE LOS HOYOS Santiago de CUBA",
+"credit": "Captured (verified carnival live)"
+},
+{
+"kind": "youtube",
+"id": "mAgPo_J0h5M",
+"title": "Cuba - Conga San Pedrito - Santiago De Cuba",
+"credit": "Captured (verified carnival live)"
+}
+],
+"gwo-ka": [
+{
+"kind": "youtube",
+"id": "OTDzHod7ytw",
+"title": "Gwoka: music, song, dance and cultural practice representative of Guadeloupean identity",
+"credit": "Captured (UNESCO ICH archive)"
+},
+{
+"kind": "youtube",
+"id": "8fPIEFH_des",
+"title": "LOCKEL & GWO-KA MODÈN EXPLORATIONS (Live at Le Baiser Salé 10/01/2025)",
+"credit": "Captured (verified club live)"
+}
+],
+"barbados-tuk": [
+{
+"kind": "youtube",
+"id": "UOwVXCvnjsI",
+"title": "Ruk-a-tuk Int'l ~ Tuk Medley",
+"credit": "Captured (verified tuk band)"
+},
+{
+"kind": "youtube",
+"id": "bM1unIlZjL8",
+"title": "The tuk band performs at City Fest.",
+"credit": "Captured (Nation News Barbados)"
+}
+],
+"junkanoo": [
+{
+"kind": "youtube",
+"id": "W8erZkfokqo",
+"title": "LIVE: 2026 New Year's Day Junkanoo Parade | OUR TV and ALIV | Full Coverage",
+"credit": "Captured (OUR News live broadcast)"
+},
+{
+"kind": "youtube",
+"id": "fwRBQodtUfo",
+"title": "LIVE: 2025 Boxing Day Junkanoo Parade | OUR TV and ALIV | Full Coverage",
+"credit": "Captured (REV Bahamas live)"
+}
+],
+"irish": [
+{
+"kind": "youtube",
+"id": "O9a8pVGa1Mo",
+"title": "Dolan's pub (Limerick, Ireland) - Irish Traditional Music Session",
+"credit": "Captured from your CSV"
+},
+{
+"kind": "youtube",
+"id": "SLEf98vS7XY",
+"title": "(Reels) Cooley's, The Cup of Tea, The Wise Maid - Session",
+"credit": "Captured from your CSV (link is a YouTube search for this video)",
+"note": "Closest match: the exact Dervish video in your sheet could not be found. This is a live session of the same reels."
+}
+],
+"rajasthan": [
+{
+"kind": "youtube",
+"id": "GBO1Xrjr6k8",
+"title": "LANGA-MANGANIYAR ON STAGE : SONG HICHAKI",
+"credit": "Captured (Manohar Lalas archive)"
+},
+{
+"kind": "youtube",
+"id": "66nsIL6rx3I",
+"title": "राजस्थानी लोक कलाकार Langa Manganiyar की EPIC मैशअप performance at Jodhpur Dhinga Gawar",
+"credit": "Captured (verified Jodhpur live)"
+}
+],
+"andes": [
+{
+"kind": "youtube",
+"id": "3A6F0C4Sceg",
+"title": "Andes Manta: The Music of the Andes",
+"credit": "Captured (ArtsEdge live concert)"
+},
+{
+"kind": "youtube",
+"id": "drsNkPJdkt0",
+"title": "Pepe Santana & Grupo INKHAY - Raíces Roots Music Concert Series 2018",
+"credit": "Captured (verified concert live)"
+}
+],
+"mande": [
+{
+"kind": "youtube",
+"id": "nuA0hDluS04",
+"title": "The Sunjata epic",
+"credit": "Captured (Hawa Kassé Mady Diabaté)"
+},
+{
+"kind": "youtube",
+"id": "G4uGuBKtPL0",
+"title": "Sikendé: La Leggenda di Ouagadou-Bida | Mitologia Africana",
+"credit": "Captured (Sissoko & Sissoko live)"
+}
+],
+"japan": [
+{
+"kind": "youtube",
+"id": "nDw4rn7SdcA",
+"title": "Minyo Crusaders Live In Summer 2025 * Japanese Folk Meets Latino Grooves",
+"credit": "Captured (verified live concert)"
+},
+{
+"kind": "youtube",
+"id": "VntUrdJruto",
+"title": "Minyo Crusaders - Live at Moods (2023) | Qwest TV",
+"credit": "Captured (Qwest TV live)"
+}
+],
+"flamenco": [
+{
+"kind": "youtube",
+"id": "BC-dH4ThaNA",
+"title": "Paco De Lucia - Flamenco at Expo, Sevilla",
+"credit": "Captured (Expo '92 Seville live)"
+},
+{
+"kind": "youtube",
+"id": "OXWDijCxjxs",
+"title": "Paco De Lucía - Full Concert [IMPROVED AUDIO] | Live at North Sea Jazz Festival 2006",
+"credit": "Captured (North Sea Jazz Archive)"
+}
+],
+"hungary": [
+{
+"kind": "youtube",
+"id": "9tXj6-d9z48",
+"title": "The Music of Transylvania's Hungarian, Romanian, and Roma Communities",
+"credit": "Captured (verified archival overview)"
+},
+{
+"kind": "youtube",
+"id": "6d6MkPzl750",
+"title": "Transylvanian Music Legends: Laka 'Kicsi' Aladár the Underrated Village Musician of Cojocna",
+"credit": "Captured (Fonó / village archive)"
+}
+],
+"maqam": [
+{
+"kind": "youtube",
+"id": "miwumqMWizQ",
+"title": "Avishai Darash feat. Marmoucha Orchestra - Twishya Hijaz El Kbir (live @Kerk van Beets 2022)",
+"credit": "Captured (Vrije Geluiden live)"
+},
+{
+"kind": "youtube",
+"id": "HBQ0XsuRWp8",
+"title": "🇯🇴 Jordan – Ya Leil Ya Ain (يا ليل يا عين) | Traditional Jordanian Folk Song",
+"credit": "Captured (verified traditional performance)"
+}
+],
+"gamelan": [
+{
+"kind": "youtube",
+"id": "CHsoXITw32g",
+"title": "UBC Balinese Gamelan Ensemble Concert",
+"credit": "Captured (UBC School of Music live)"
+},
+{
+"kind": "youtube",
+"id": "PcNewws4NnY",
+"title": "Javanese Gamelan - LIVE TRADITIONAL INDONESIAN MUSIC - Java, Indonesia - A SLICE OF THE ORIENT",
+"credit": "Captured (verified Java live)"
+}
+],
+"appalachia": [
+{
+"kind": "youtube",
+"id": "TeULeHtHBfw",
+"title": "Rising Appalachia | LIVE from Preservation Hall (Full Performance)",
+"credit": "Captured (verified concert live)"
+},
+{
+"kind": "youtube",
+"id": "lPS4_LCk6hY",
+"title": "Songbird Holler LIVE at White Horse Black Mountain 10-30-2025",
+"credit": "Captured (IamAVL NC live archive)"
+}
+],
+"nordic": [
+{
+"kind": "youtube",
+"id": "YrfLuUqUOho",
+"title": "The Nordic Fiddlers Bloc - Polska from Delsbo",
+"credit": "Captured (verified live performance)"
+},
+{
+"kind": "youtube",
+"id": "0IAV7qPAPbU",
+"title": "Swedish polska & Norwegian pols - Nyckelharpa",
+"credit": "Captured (verified acoustic recording)"
+}
+],
+"georgia": [
+{
+"kind": "youtube",
+"id": "Iz4ilaLjEJk",
+"title": "Lashari: Georgian choir live | 4:3 Short Film",
+"credit": "Captured (Boiler Room 4:3 live)"
+},
+{
+"kind": "youtube",
+"id": "2GFIkdTe_BA",
+"title": "Iberi: Georgian Polyphonic Music choir | Music Interview and Performance 2021",
+"credit": "Captured (SAMA Seattle live)"
+}
+],
+"hawaii": [
+{
+"kind": "youtube",
+"id": "bcBiDLea9GU",
+"title": "George Kahumoku Jr. | NĀ MELE | Full Episode",
+"credit": "Captured (PBS Hawaiʻi live)"
+},
+{
+"kind": "youtube",
+"id": "7or9r3f95po",
+"title": "Slack Key Show Live - Ledward Kaapana & George Kahumoku Jr. 1/07/2026",
+"credit": "Captured (Napili Kai live show)"
+}
+],
+"mongolia": [
+{
+"kind": "youtube",
+"id": "R2ovoRyv4kw",
+"title": "Huun‐Huur‐Tu - Full Performance (Live on KEXP)",
+"credit": "Captured (KEXP live session)"
+},
+{
+"kind": "youtube",
+"id": "9KMT4XJaiMs",
+"title": "Altai Kai | Kara Suu | Spring Water (LIVE)",
+"credit": "Captured (verified live concert)"
+}
+]
+}
+}

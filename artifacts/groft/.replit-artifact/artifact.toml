@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "GROFT"
+description = "A global repository of folkloric traditions. Explore an interactive globe and searchable index, save traditions, and listen to archival music and YouTube performances."
+version = "1.0.0"
+id = "artifacts/groft"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25825
+
+[services.development]
+run = "pnpm --filter @workspace/groft run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/groft", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/groft/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25825"
+BASE_PATH = "/"
