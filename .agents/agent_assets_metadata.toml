@@ -1,0 +1,30 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "6aZmZX3jT1fqBpq1WfM4y"
+uri = "file://generated-artifacts/groft/groft-logo-8x.png"
+type = "image"
+title = "GROFT logo — 8× transparent PNG"
+description = "High-resolution transparent PNG master, upscaled 8× from the original artwork."
+logical_id = "bb157264-a35f-4abc-b7e8-a06bb67c377b"
+content_hash = "sha256:169e58021d70b2bc34affbb4c1169cb03d077a2afbe2495756d9a47ad71ef5cb"
+size = 6139836
+mtime_ms = 1794942690274
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/bb157264-a35f-4abc-b7e8-a06bb67c377b/18c1ebee-7ab6-4e51-adaf-882914ff1e0e"
+storage_version_token = "1794943219590315"
+content_type = "image/png"
+
+[[outputs]]
+id = "3yhfcTcWGpD2uXTk-swKs"
+uri = "file://generated-artifacts/groft/groft-tagline-8x.png"
+type = "image"
+title = "GROFT tagline — 8× transparent PNG"
+description = "High-resolution transparent PNG master, cropped to the visible lettering and upscaled 8×."
+logical_id = "cabcee0e-38b5-4f93-99b1-70b115090c11"
+content_hash = "sha256:9b0bf654e646f313a7472e19bf6499a3943761630e9879f3e0fb3dad87e832b2"
+size = 681834
+mtime_ms = 1794942691350
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:e804035e-dea4-4569-8eb7-1d1f9bb10228/cabcee0e-38b5-4f93-99b1-70b115090c11/4039d0a6-a4bc-464a-9598-61f5cb655040"
+storage_version_token = "1794943220163294"
+content_type = "image/png"
