@@ -904,6 +904,13 @@ html body{background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)
 .tradition-list::-webkit-scrollbar-track{background:#e5eee7}
 .tradition-list::-webkit-scrollbar-thumb{background:var(--groft-green);border-color:#e5eee7}
 .tradition-list::-webkit-scrollbar-thumb:hover{background:#168e49}
+.tradition-scroll-area{position:relative;height:clamp(220px,48svh,480px);width:100%;min-width:0;overflow:hidden}
+.tradition-scroll-viewport{height:100%;width:100%;overscroll-behavior-y:contain;touch-action:pan-y;border-radius:6px}
+.tradition-scroll-viewport>div{padding-right:22px}
+.tradition-scroll-viewport:focus-visible{outline:2px solid var(--groft-green);outline-offset:-2px}
+.tradition-scroll-track{display:flex;width:16px;padding:3px;background:#dce9df;border:1px solid #b4cbb9;border-radius:9px;touch-action:none;user-select:none;z-index:1}
+.tradition-scroll-thumb{position:relative;flex:1;background:#10ac35;border-radius:6px;min-height:32px}
+.tradition-scroll-thumb:hover{background:#168e49}
 .topbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;column-gap:32px}
 .topbar .brand-lockup{display:contents}
 .topbar .brand-rule{display:none}
