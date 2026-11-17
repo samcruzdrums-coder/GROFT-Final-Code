@@ -9,8 +9,8 @@ Keep GROFT lettering as font-independent vector outlines rather than repeatedly 
 
 **How to apply:** Preserve the approved wording and green-to-blue palette, use natural glyph proportions, and inspect actual rendered sizes rather than relying on export dimensions.
 
-The user wants Globe aligned left, Index centered over the globe, and Saved Traditions aligned right within the navigation row.
+The user wants Globe aligned left and Saved Traditions aligned right within the navigation row, with Index nudged slightly left of center.
 
-**Why:** The user explicitly clarified that the outer labels should not be centered in their columns.
+**Why:** The user explicitly clarified that the outer labels should not be centered in their columns, then requested Index move a bit left.
 
-**How to apply:** Retain the three equal navigation columns, but align their contents left, center, and right respectively.
+**How to apply:** Retain three equal navigation columns and matching inner padding; preserve the requested slight left offset for Index.
