@@ -347,7 +347,7 @@ function Home(){
 const clerkAppearance={
  theme:shadcn,
  cssLayerName:"clerk",
- options:{logoPlacement:"inside" as const,logoLinkUrl:basePath||"/",logoImageUrl:`${window.location.origin}${basePath}/logo.svg`},
+ options:{logoPlacement:"inside" as const,logoLinkUrl:basePath||"/",logoImageUrl:`${window.location.origin}${basePath}/brand/groft-logo.svg`},
  variables:{colorPrimary:"#168c52",colorForeground:"#173128",colorMutedForeground:"#5d7068",colorBackground:"#f5f9fa",colorInput:"#ffffff",colorInputForeground:"#173128",colorDanger:"#b42318",colorNeutral:"#263b31",fontFamily:"'Bricolage Grotesque', sans-serif",borderRadius:"1rem"},
  elements:{cardBox:{backgroundColor:"#f5f9fa",borderRadius:"20px",width:"min(440px, calc(100vw - 32px))",boxShadow:"0 24px 70px rgba(20,45,36,.16)"},card:{backgroundColor:"transparent",boxShadow:"none",border:"none"},footer:{backgroundColor:"transparent",border:"none"},headerTitle:{color:"#173128",fontWeight:"700"},headerSubtitle:{color:"#5d7068"},formFieldLabel:{color:"#173128"},formFieldInput:{color:"#173128",backgroundColor:"#fff",borderRadius:"9px"},formButtonPrimary:{backgroundColor:"#168c52",color:"#fff"},footerActionText:{color:"#5d7068"},footerActionLink:{color:"#168c52"},socialButtonsBlockButtonText:{color:"#173128"},dividerText:{color:"#5d7068"}}
 };

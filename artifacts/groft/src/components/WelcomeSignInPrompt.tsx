@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useAuth } from '@clerk/react';
 import { useLocation } from 'wouter';
 import {
@@ -8,39 +7,25 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 
-const promptSeenKey = 'groft-welcome-seen';
-
 export function WelcomeSignInPrompt() {
   const { isLoaded, isSignedIn } = useAuth();
   const [, setLocation] = useLocation();
-  const [dismissed, setDismissed] = useState(() => {
-    try {
-      return sessionStorage.getItem(promptSeenKey) === 'true';
-    } catch {
-      return false;
-    }
-  });
-
-  const dismiss = () => {
-    setDismissed(true);
-    try {
-      sessionStorage.setItem(promptSeenKey, 'true');
-    } catch {
-      // The prompt can still be dismissed when browser storage is unavailable.
-    }
-  };
 
   const navigate = (path: string) => {
-    dismiss();
     setLocation(path);
   };
 
   return (
     <Dialog
-      open={isLoaded && !isSignedIn && !dismissed}
-      onOpenChange={(open) => { if (!open) dismiss(); }}
+      open={isLoaded && !isSignedIn}
     >
-      <DialogContent className="welcome-sign-in" data-testid="dialog-welcome-sign-in">
+      <DialogContent
+        className="welcome-sign-in"
+        data-testid="dialog-welcome-sign-in"
+        showCloseButton={false}
+        onEscapeKeyDown={(event) => event.preventDefault()}
+        onInteractOutside={(event) => event.preventDefault()}
+      >
         <img
           className="welcome-sign-in-logo"
           src={`${import.meta.env.BASE_URL}brand/groft-logo.svg`}

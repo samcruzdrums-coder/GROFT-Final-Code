@@ -1,1 +1,1 @@
-- [Account favorites](account-favorites.md) — guest saves merge once into the next signed-in account; signed-out browsing stays public.
+- [Account favorites](account-favorites.md) — preserve legacy guest saves on sign-in; the welcome prompt must not offer a guest or dismiss option.
