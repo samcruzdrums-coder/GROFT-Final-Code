@@ -911,17 +911,17 @@ html body{background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)
 .tradition-scroll-track{display:flex;width:16px;padding:3px;background:#dce9df;border:0;border-radius:9px;touch-action:none;user-select:none;z-index:1}
 .tradition-scroll-thumb{position:relative;flex:1;background:#10ac35;border-radius:6px;min-height:32px}
 .tradition-scroll-thumb:hover{background:#168e49}
-.topbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;column-gap:32px}
+.topbar{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;column-gap:32px}
 .topbar .brand-lockup{display:contents}
 .topbar .brand-rule{display:none}
 .topbar .brand-home{grid-column:1;grid-row:1}
- .topbar .brand-tagline{grid-column:2;grid-row:1;justify-self:center;width:min(480px,100%);max-width:100%}
+ .topbar .brand-tagline{position:absolute;left:calc(50% - 16px);top:50%;width:min(480px,100%);max-width:100%;transform:translate(-50%,-50%)}
 .topbar .account-actions{grid-column:3;grid-row:1;justify-self:end;align-self:center;width:auto;justify-content:flex-end;margin:0}
 @media(max-width:760px){
  .topbar{grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center}
  .topbar .brand-logo{width:min(220px,42vw)!important}
  .topbar .account-actions{grid-column:2;max-width:180px;flex-wrap:wrap}
-  .topbar .brand-tagline{grid-column:1/-1;grid-row:2;width:min(480px,100%);justify-self:center}
+  .topbar .brand-tagline{position:static;grid-column:1/-1;grid-row:2;width:min(480px,100%);justify-self:center;transform:none}
  .view-heading .view-tab:first-child .view-tab-label{transform:none}
  .view-heading .view-tab:nth-child(2) .view-tab-label{transform:none}
 }
