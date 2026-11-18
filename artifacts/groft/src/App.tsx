@@ -281,7 +281,7 @@ function Home(){
  return <main className="groft-shell">
     <WelcomeSignInPrompt/>
     <header className="topbar">
-    <div className="brand-lockup"><button type="button" className="brand-home" onClick={goHome} aria-label="GROFT — back to home" title="Back to home" data-testid="button-home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}brand/groft-logo.svg`} alt="GROFT logo"/></button><span className="brand-rule"></span><img className="brand-tagline" src={`${import.meta.env.BASE_URL}brand/groft-tagline.svg`} alt="A global repository of folkloric traditions"/></div>
+    <div className="brand-lockup"><button type="button" className="brand-home" onClick={goHome} aria-label="GROFT — back to home" title="Back to home" data-testid="button-home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}brand/groft-logo.svg`} alt="GROFT logo"/></button><span className="brand-rule"></span><img className="brand-tagline" src={`${import.meta.env.BASE_URL}brand/groft-tagline.svg`} alt="The global repository of folkloric traditions"/></div>
      <AuthControls/>
   </header>
    {(report||(favoriteQuery.isError&&!favoriteQuery.data))&&<div className="account-notice" role="status" data-testid="status-account-sync">{report||'Your saved traditions could not load.'}<button type="button" onClick={()=>{setReport('');favoriteSyncUserRef.current=null;void favoriteQuery.refetch()}} data-testid="button-retry-sync">Try again</button></div>}

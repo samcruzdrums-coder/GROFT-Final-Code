@@ -57,7 +57,7 @@ def label(filename, text, height):
 label("view-globe.svg", "GLOBE", 24)
 label("view-index.svg", "INDEX", 24)
 label("view-saved.svg", "SAVED TRADITIONS", 24)
-label("groft-tagline.svg", "a global repository of folkloric traditions", 18)
+label("groft-tagline.svg", "the global repository of folkloric traditions", 28)
 
 path, (x0, y0, x1, y1) = outlines("GROFT")
 scale = 582 / (x1 - x0)
