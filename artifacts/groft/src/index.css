@@ -796,7 +796,7 @@ body.globe-dragging, body.globe-dragging * { -webkit-user-select: none !importan
 .brand-home{display:block;border:0;background:none;padding:0;cursor:pointer;line-height:0}
 .brand-home:focus-visible{outline:2px solid #a86a00;outline-offset:4px;border-radius:6px}
 .brand-logo{width:min(300px,62vw)!important;height:auto!important;max-height:none!important;max-width:none!important;object-fit:contain;image-rendering:auto}
-.brand-tagline{display:block;width:min(480px,40vw);height:auto;max-height:none;object-fit:contain}
+.brand-tagline{display:block;width:min(480px,40vw);height:auto;max-height:none;box-sizing:content-box;padding:6px 12px;border:1px solid rgba(16,172,53,.3);border-radius:10px;background:linear-gradient(110deg,rgba(16,172,53,.11),rgba(255,255,255,.82) 48%,rgba(7,83,106,.08));box-shadow:0 5px 18px rgba(16,80,40,.12);object-fit:contain}
 .auth-logo{width:min(300px,80%)!important;height:auto!important;max-height:none!important}
 .view-tab-art{display:block;width:auto;height:22px;max-width:250px;object-fit:contain}
 .directory-title>.saved-filter{margin-left:auto}
@@ -915,13 +915,13 @@ html body{background:linear-gradient(180deg,#bccddb 0%,#d3e0e8 48%,#e8eff3 100%)
 .topbar .brand-lockup{display:contents}
 .topbar .brand-rule{display:none}
 .topbar .brand-home{grid-column:1;grid-row:1}
- .topbar .brand-tagline{position:absolute;left:calc(50% - 16px);top:50%;width:min(480px,100%);max-width:100%;transform:translate(-50%,-50%)}
+ .topbar .brand-tagline{position:absolute;left:calc(50% + 14px);top:50%;width:min(480px,40vw);max-width:100%;transform:translate(-50%,-50%)}
 .topbar .account-actions{grid-column:3;grid-row:1;justify-self:end;align-self:center;width:auto;justify-content:flex-end;margin:0}
 @media(max-width:760px){
  .topbar{grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center}
  .topbar .brand-logo{width:min(220px,42vw)!important}
  .topbar .account-actions{grid-column:2;max-width:180px;flex-wrap:wrap}
-  .topbar .brand-tagline{position:static;grid-column:1/-1;grid-row:2;width:min(480px,100%);justify-self:center;transform:none}
+  .topbar .brand-tagline{position:static;grid-column:1/-1;grid-row:2;width:min(480px,calc(100% - 24px));justify-self:center;transform:none}
  .view-heading .view-tab:first-child .view-tab-label{transform:none}
  .view-heading .view-tab:nth-child(2) .view-tab-label{transform:none}
 }
