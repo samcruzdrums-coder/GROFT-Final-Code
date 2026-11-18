@@ -278,7 +278,8 @@ function Home(){
  const reset=()=>{setUserEntries([]);setSelected('');setCenter({lo:10,la:25});setZoom(1);setRegion('All');setStatus('');setSavedOnly(false);setQuery('');setReport('Your imported data was cleared.');try{localStorage.removeItem(storageUser);localStorage.removeItem(storageData)}catch{}};
  const filteredSrc=active?.src?.filter(s=>/^https?:\/\//i.test(s))||[];
  const selectedIsSaved=Boolean(active&&favorites.includes(active.id));
- return <main className="groft-shell">
+  return <main className="groft-shell">
+     <div className="waves" aria-hidden="true"><i/><i/><i/><i/></div>
     <WelcomeSignInPrompt/>
     <header className="topbar">
     <div className="brand-lockup"><button type="button" className="brand-home" onClick={goHome} aria-label="GROFT — back to home" title="Back to home" data-testid="button-home"><img className="brand-logo" src={`${import.meta.env.BASE_URL}brand/groft-logo.svg`} alt="GROFT logo"/></button><span className="brand-rule"></span><img className="brand-tagline" src={`${import.meta.env.BASE_URL}brand/groft-tagline.svg`} alt="The global repository of folkloric traditions"/></div>
