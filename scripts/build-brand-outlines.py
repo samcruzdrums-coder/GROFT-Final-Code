@@ -54,42 +54,10 @@ def label(filename, text, height):
     (OUT / filename).write_text(svg)
 
 
-def multiline_label(filename, lines, height, gap):
-    prepared = []
-    max_width = 0
-    for text in lines:
-        path, (x0, y0, x1, y1) = outlines(text)
-        scale = height / (y1 - y0)
-        width = (x1 - x0) * scale
-        prepared.append((path, x0, y1, scale, width))
-        max_width = max(max_width, width)
-
-    total_height = len(lines) * height + (len(lines) - 1) * gap
-    paths = []
-    for index, (path, x0, y1, scale, width) in enumerate(prepared):
-        x_offset = (max_width - width) / 2
-        y_offset = index * (height + gap)
-        paths.append(
-            f'<path transform="translate({1+x_offset:.3f} {1+y_offset:.3f}) '
-            f'scale({scale}) translate({-x0} {y1}) scale(1 -1)" d="{path}"/>'
-        )
-    svg = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{max_width+2:.3f}" '
-        f'height="{total_height+2:.3f}" viewBox="0 0 {max_width+2:.3f} {total_height+2:.3f}">'
-        f'<defs>{gradient}</defs><g fill="url(#word)">{"".join(paths)}</g></svg>\n'
-    )
-    (OUT / filename).write_text(svg)
-
-
 label("view-globe.svg", "GLOBE", 24)
 label("view-index.svg", "INDEX", 24)
 label("view-saved.svg", "SAVED TRADITIONS", 24)
-multiline_label(
-    "groft-tagline.svg",
-    ["the global repository", "of folkloric", "traditions"],
-    36,
-    8,
-)
+label("groft-tagline.svg", "the global repository of folkloric traditions", 28)
 
 path, (x0, y0, x1, y1) = outlines("GROFT")
 scale = 582 / (x1 - x0)
