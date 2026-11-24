@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "pnpm --filter @workspace/groft run typecheck && PORT=25825 BASE_PATH=/ pnpm --filter @workspace/groft run build",
+  "outputDirectory": "artifacts/groft/dist/public",
+  "rewrites": [
+    {
+      "source": "/((?!api|.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
